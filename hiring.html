@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ting Dang | Hiring</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Ting Dang">
+    <meta name="description" content="University of Melbourne, Australia">
+    <meta name="og:title" content="Ting Dang">
+    
+    <!-- Update Bootstrap version to match index.html -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="mel.jpg" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+            padding-top: 50px;
+        }
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        .section-title {
+            color: #336699;
+            border-bottom: 2px solid #336699;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        .content-section {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,.1);
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        .sub-section {
+            margin-bottom: 25px;
+        }
+        .sub-section h5 {
+            color: #336699;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .content-section ul {
+            padding-left: 20px;
+        }
+        .content-section li {
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 767px) {
+            .navbar-nav {
+                margin: 0;
+            }
+            .navbar-nav > li {
+                float: none;
+            }
+            .navbar-nav > li > a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .navbar-collapse {
+                border-top: 1px solid #444;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .navbar-nav {
+                float: right;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="wide-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Ting Dang</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="research_projects.html">Research Projects</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="people.html">Team</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="teaching_and_services.html">Teaching & Services</a></li>
+                    <li><a href="hiring.html">Hiring</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wide-container content-section">
+        <h2 class="section-title">PhD Hiring</h2>
+        
+        <!-- <div class="content-section">
+            <h4 class="section-title"><a href="https://findanexpert.unimelb.edu.au/opportunity/1400-ritual--reliable-and-trustworthy-machine-learning-for-time-series-modeling-in-mobile-health" style="color: inherit;">RiTuaL: Reliable and Trustworthy Machine Learning for Time Series Modelling in Mobile Health [1 position]</a></h4>
+            <h5>Joint PhD program University of Melbourne - University of Birmingham</h5>
+            <p>Mobile health (mHealth) applications are revolutionizing healthcare by continuously monitoring environmental factors (e.g., light intensity) and personal attributes (e.g., heart rate, motion, location) to provide health-related predictions (e.g., diagnostics) and analytics. This technology enables long-term, out-of-clinic monitoring without requiring active user participation. These applications need to be safe in terms of:</p>
+            <ol>
+                <li>The accuracy of health predictions across various contexts.</li>
+                <li>Output confidence of the prediction.</li>
+            </ol>
+            <p>Despite the popularity of machine learning in mHealth, ensuring safety is open as data distribution naturally shifts in-the-wild. Following types of shifts become more complex in mHealth as the data is sequential.</p>
+            <p>In this project we will enhance the accuracy and reliability of mHealth predictions, with long-term goals of translating findings into clinical practice. Key Research Questions:</p>
+            <ol>
+                <li>
+                    <i>Quantifying Data Distribution Shifts:</i>
+                    <ul>
+                        <li>How can we quantify shifts in data distribution for mHealth sensing modalities?</li>
+                        <li>Develop methods to connect empirical advancements with theoretical understanding.</li>
+                    </ul>
+                </li>
+                <li>
+                    <i>Building Robust mHealth Models:</i>
+                    <ul>
+                        <li>How can we create mHealth models that remain accurate despite distribution shifts?</li>
+                        <li>Explore representation learning and domain adaptation to enhance model robustness.</li>
+                    </ul>
+                </li>
+                <li>
+                    <i>Reliable Uncertainty Estimates:</i>
+                    <ul>
+                        <li>How can we ensure mHealth models produce reliable uncertainty estimates even with data shifts?</li>
+                        <li>Integrate advanced uncertainty quantification methods to improve model reliability.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p>This project brings together expertise in time series modeling, mobile sensing, and machine learning reliability to address these critical challenges in mHealth.</p>
+            <p><strong>Supervisors:</strong> Dr. Ting Dang (University of Melbourne) and Dr. Abhirup Ghosh (University of Birmingham)</p>
+            <p><strong>Anticipated start date:</strong> Early 2025</p>
+            <p><strong>Note:</strong> This Joint PhD project will be primarily based at the University of Melbourne with a minimum 12-month stay at the University of Birmingham.</p>
+            
+            <h5>Requirements</h5>
+            <ul>
+                <li>Master degree in computer science or related fields</li>
+                <li>Weighted Average Mark (WAM) > 85/100 (82 for Unimelb Students)</li>
+                <li>Relevant publications in top venues</li>
+            </ul>
+            
+            <h5>How to Apply</h5>
+            <p>To apply for this position, please send the following documents to both Dr. Ting Dang (ting.dang@unimelb.edu.au) and Dr. Abhirup Ghosh (a.ghosh.1@bham.ac.uk):</p>
+            <ul>
+                <li>CV</li>
+                <li>Academic transcripts</li>
+                <li>A brief statement of research interests (1-2 pages)</li>
+                <li>Samples of published papers</li>
+            </ul>
+        </div> -->
+
+        <div class="content-section">
+            <h4 class="section-title">Wearable sensing for health monitoring</h4>
+            <div class="sub-section">
+                <h5>Research Areas</h5>
+                <p>I am looking for highly motivated PhD students to work on wearable sensing and computing for health monitoring. </p>
+            </div>
+
+            <div class="sub-section">
+                <h5>Requirements</h5>
+                <ul>
+                    <li>Strong background in computer science, electrical engineering, or related fields</li>
+                    <li>GPA of at least 82 for University of Melbourne students and at least 85 for external universities</li>
+                    <li>Experience in data collection, hardware, sensing, and computing</li>
+                    <li>Solid programming skills, including Python and C++</li>
+                    <li>Relevant publications in top-tier venues such as UbiComp, HotMobile, etc</li>
+                </ul>
+            </div>
+
+            <div class="sub-section">
+                <h5>How to Apply</h5>
+                <ul>
+                    <li>Please check the <a href="https://study.unimelb.edu.au/how-to-apply/graduate-research">application process</a> and <a href="https://study.unimelb.edu.au/find/courses/graduate/doctor-of-philosophy-engineering-and-it/entry-requirements/">entry requirements</a> for PhD application at the University of Melbourne.</li>
+                    <li>Scholarships are available for both domestic and international students with excellent academic records. Please check the <a href="https://scholarships.unimelb.edu.au/awards/graduate-research-scholarships">scholarship information</a> for more details.</li>
+                </ul>
+            </div>
+
+            <div class="sub-section">
+                <h5>Contact</h5>
+                <ul>
+                    <li>If you are interested, please email ting.dang@unimelb.edu.au with your <strong>CV</strong>, <strong>transcripts</strong>, and <strong>research proposal</strong>. Please review my recent publications to identify overlapping research interests when preparing your proposal. I will respond to applications that include all required documents. Due to the high volume of inquiries, I may not respond to all emails.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- <div class="content-section">
+            <h4 class="section-title"><a href="https://findanexpert.unimelb.edu.au/opportunity/1406-harnessing-ai-for-continuous-glucose-monitoring-and-diabetes-management" style="color: inherit;">Harnessing AI for Continuous Glucose Monitoring and Diabetes Management [1 position]</a></h4>
+            <p>Continuous glucose monitoring (CGM) has revolutionized the management of type 1 diabetes. The continuous acquisition of glucose readings, combined with other physiological and biochemical data from electronic medical records, provides extensive and detailed insights into the daily fluctuations of glucose levels and associated physiological changes. Artificial intelligence (AI) has been increasingly employed to analyze these health data sets, facilitating personalized care for individuals with diabetes and enabling the adaptation of treatments for complex clinical presentations.</p>
+            <p>This PhD project aims to investigate the application of AI in analyzing glucose signals to identify individuals at high risk and diagnose those who may develop severe hypoglycemia or other diabetes-related complications. Specifically, the objectives of this project are:</p>
+            <ul>
+                <li>To develop AI algorithms for CGM data to identify high-risk individuals and improve diabetes management</li>
+                <li>To integrate multimodal data for enhanced diabetes monitoring</li>
+                <li>To develop personalized models for the management of diabetes</li>
+            </ul>
+            <p><strong>Supervisors:</strong> Prof. Elif Ekinci and Dr. Ting Dang, University of Melbourne</p>
+            <p><strong>Anticipated start date:</strong> Early 2025</p>
+
+            <h5>Requirements</h5>
+            <ul>
+                <li>Master degree in computer science or related fields</li>
+                <li>Weighted Average Mark (WAM) > 85/100 (82 for Unimelb Students)</li>
+                <li>Relevant publications in top venues</li>
+            </ul>
+            
+            <h5>How to Apply</h5>
+            <p>To apply for this position, please send the following documents to Ting Dang (ting.dang@unimelb.edu.au):</p>
+            <ul>
+                <li>CV</li>
+                <li>Academic transcripts</li>
+                <li>A brief statement of research interests (1-2 pages)</li>
+                <li>Samples of published papers</li>
+            </ul>
+        </div> -->
+<!-- 
+        <div class="content-section">
+            <h4 class="section-title">General PhD Positions</h4>
+            <div class="sub-section">
+                <h5>Research Areas</h5>
+                <p>I am looking for highly motivated PhD students to work on the following research areas:</p>
+                <ul>
+                    <li>Machine learning for mobile health</li>
+                    <li>Time series modeling</li>
+                    <li>Speech and audio processing</li>
+                    <li>Wearable sensing and computing for health</li>
+                </ul>
+            </div>
+
+            <div class="sub-section">
+                <h5>Requirements</h5>
+                <ul>
+                    <li>Strong background in computer science, electrical engineering, or related fields</li>
+                    <li>GPA over 82 for University of Melbourne students and 85 for external universities</li>
+                    <li>Solid programming skills (e.g., Python, C++)</li>
+                    <li>Relevant publications in top venues</li>
+                    <li>Excellent communication and writing skills in English</li>
+                    <li>Self-motivated and able to work independently</li>
+                </ul>
+            </div>
+
+            <div class="sub-section">
+                <h5>How to Apply</h5>
+                <ul>
+                    <li>Please check the <a href="https://study.unimelb.edu.au/how-to-apply/graduate-research">application process</a> and <a href="https://study.unimelb.edu.au/find/courses/graduate/doctor-of-philosophy-engineering-and-it/entry-requirements/">entry requirements</a> for PhD application at the University of Melbourne.</li>
+                    <li>Scholarships are available for both domestic and international students with excellent academic records. Please check the <a href="https://scholarships.unimelb.edu.au/awards/graduate-research-scholarships">scholarship information</a> for more details.</li>
+                </ul>
+            </div>
+
+            <div class="sub-section">
+                <h5>Contact</h5>
+                <ul>
+                    <li>If you are interested, please email ting.dang@unimelb.edu.au with your CV, transcripts, and/or other related documents. Please be aware that due to the high volume of inquiries, I may not be able to respond to all emails.</li>
+                    <li>Please take a look at my recent publications to identify any overlapping interests. Submitting a research proposal or potential projects that align with these interests would be very useful.</li>
+                </ul>
+            </div>
+        </div> -->
+
+    </div>
+
+    <footer class="footer">
+        <div class="wide-container">
+            <p class="text-center mb-0">&copy; Ting Dang 2025</p>
+        </div>
+    </footer>
+
+    <!-- Update script versions to match index.html -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Close the navbar when a menu item is clicked
+            $('.navbar-nav>li>a').on('click', function(){
+                $('.navbar-collapse').collapse('hide');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ting Dang | Research Projects</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Ting Dang">
+    <meta name="description" content="University of Melbourne, Australia">
+    <meta name="og:title" content="Ting Dang">
+    
+    <!-- Update Bootstrap version to match index.html -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="mel.jpg" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 50px; /* Add padding to account for fixed navbar */
+        }
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        .page-header {
+            text-align: center;
+            color: #336699;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #336699;
+        }
+        .project-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,.1);
+            margin-bottom: 2rem;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            height: auto; /* Changed from 100% to auto */
+            display: flex;
+            flex-direction: column;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-image {
+            height: 200px; /* Reduced from 250px */
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover .project-image img {
+            transform: scale(1.05);
+        }
+        .project-content {
+            padding: 1rem; /* Reduced from 1.5rem */
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .project-title {
+            color: #336699;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .project-description {
+            text-align: justify;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem; /* Slightly reduced font size */
+        }
+        .relevant-publications {
+            background-color: #f1f3f5;
+            padding: 0.75rem; /* Reduced from 1rem */
+            border-radius: 4px;
+            margin-top: 0.5rem;
+        }
+        .relevant-publications h6 {
+            color: #336699;
+            font-weight: bold;
+            font-size: 0.95rem; /* Slightly reduced font size */
+            margin-bottom: 0.25rem; /* Reduced from 0.5rem */
+        }
+        .relevant-publications ul {
+            padding-left: 0.75rem; /* Reduced from 1rem */
+            margin-bottom: 0; /* Added to remove bottom margin */
+        }
+        .relevant-publications li {
+            margin-bottom: 0.25rem; /* Reduced from 0.5rem */
+            font-size: 0.85rem; /* Slightly reduced font size */
+            text-align: justify;
+        }
+        .relevant-publications li:last-child {
+            margin-bottom: 0; /* Remove margin from last list item */
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch; /* This ensures all columns in a row have the same height */
+        }
+        .col-md-6 {
+            display: flex;
+            margin-bottom: 2rem; /* Add margin to the bottom of each column */
+        }
+        @media (max-width: 768px) {
+            .project-image {
+                height: 200px;
+            }
+        }
+        @media (max-width: 767px) {
+            .navbar-nav {
+                margin: 0;
+            }
+            .navbar-nav > li {
+                float: none;
+            }
+            .navbar-nav > li > a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .navbar-collapse {
+                border-top: 1px solid #444;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .navbar-nav {
+                float: right;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="wide-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Ting Dang</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="research_projects.html">Research Projects</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="people.html">Team</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="teaching_and_services.html">Teaching & Services</a></li>
+                    <li><a href="hiring.html">Hiring</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wide-container content-section">
+        <h2 class="page-header">Research Projects</h2>
+        
+        <div class="row">
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="rp1.png" alt="Audio-based Mobile Health Diagnosis">
+                    </div>
+                    <div class="project-content">
+                        <h4 class="project-title"><strong><em>Audio-based Mobile Health Diagnosis</em></strong></h4>
+                        <em><strong>Machine learning (ML) for disease tracking</strong></em>
+                        <p class="project-description">
+                            This project aims to explore the potential of audio signals for disease detection and tracking, including respiratory diseases, emotion disorders, and mental health. By analyzing audio characteristics, this project aims to push the boundaries of audio signals for remote health monitoring and continuous forecasting of disease progression ahead of time for timely intervention.
+                        </p>
+                        <div class="relevant-publications">
+                            <h6>Relevant Publications:</h6>
+                            <ul>
+                                <li><strong>T. Dang</strong>, J. Han, T. Xia, E. Bondareva, C. Brown, J. Chauhan, A. Grammenos, D. Spathis, P. Cicuta, and C. Mascolo<br/>
+                                    <em><a href="https://dl.acm.org/doi/10.1145/3580305.3599792">Conditional Neural ODE Processes for Individual Disease Progression Forecasting: A Case Study on COVID-19</a></em>, <strong>KDD 2023</strong>.</strong> 
+                                    </li>
+                                <li><strong>T. Dang</strong>, J. Han, T. Xia, D. Spathis, E. Bondareva, C. Brown, J. Chauhan, A. Grammenos, A. Hasthanasombat, A. Floto, P. Cicuta, and C. Mascolo<br/>
+                                    <em><a href="https://www.jmir.org/2022/6/e37004/">Exploring longitudinal cough, breath, and voice data for COVID-19 progression prediction via sequential deep learning: model development and validation</a></em>, 
+                                    <strong>JMIR, 2023</strong></li>
+                                <li><strong>T. Dang</strong>, A. Ghosh, D. Spathis, C. Mascolo<br/>
+                                    <em><a href="https://royalsocietypublishing.org/doi/full/10.1098/rsos.230806">Human-centered AI for mobile health sensing: challenges and opportunities</a></em>,
+                                    <strong>Royal Society Open Science</strong>, 2023</li>
+                                <li>J. Han, T. Xia, D. Spathis, E. Bondareva, C. Brown, J. Chauhan, <strong>T. Dang,</strong> A. Grammenos, A. Hasthanasombat, A. Floto, and P. Cicuta, C. Mascolo<br/>
+                                    <em><a href="https://www.nature.com/articles/s41746-021-00553-x">Sounds of COVID-19: exploring realistic performance of audio-based digital testing. </a></em>, <strong>NPJ digital medicine, 2022</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="rsei.png" alt="Emotion Intelligence in Conversational AI">
+                    </div>
+                    <div class="project-content">
+                        <h4 class="project-title"><strong><em>Emotion Intelligence in Conversational AI</em></strong></h4>
+                        <em><strong>Exploring and enhancing the understanding of human emotions in human-computer conversational interactions</strong></em>
+                        <p class="project-description">
+                            In addition to advancing cognitive intelligence in conversational AI, this project aims to explore and enhance these systems with emotional intelligence capable of understanding and responding to human emotions. Specifically, the project will focus on the complex, inherently ambiguous, and nuanced nature of human emotions, alongside the development of parallel AI systems for genuine emotional understanding. By integrating advanced speech emotion recognition techniques with natural language processing, we endeavor to create AI assistants that are more empathetic and contextually aware.
+                        </p>
+                        <div class="relevant-publications">
+                            <h6>Relevant Publications:</h6>
+                            <ul>
+                                <li> Halim, J., Wang, S., Jia, H., <strong>Dang, T.</strong><br/>
+                                    <em><a href="https://arxiv.org/abs/2505.18484">Token-Level Logits Matter: A Closer Look at Speech Foundation Models for Ambiguous Emotion Recognition</a></em>, <strong>INTERSPEECH 2025</strong></li>
+                                <li>Hong, X., Gong, Y., Sethu, V., <strong>Dang, T.</strong><br/>
+                                    <em><a href="https://ieeexplore.ieee.org/abstract/document/10888198">AER-LLM: Ambiguity-aware Emotion Recognition Leveraging Large Language Models</a></em>,
+                                    <strong>ICASSP 2025</strong></li>
+                                <li>Y. Hu, S. Zhang, <strong>T. Dang</strong>, H. Jia, FD. Salim, W. Hu, and AJ. Quigley<br/>
+                                    <em><a href="https://dl.acm.org/doi/10.1145/3675094.3678494">Exploring Large-Scale Language Models to Evaluate EEG-Based Multimodal Data for Mental Health</a></em>,
+                                    <strong>UbiComp Workshop WellComp 2024</strong></li>
+                                <!-- <li>J. Wu, <strong>T. Dang</strong>, V. Sethu, and E. Ambikairajah<br/>
+                                    <em><a href="https://www.isca-archive.org/interspeech_2024/wu24_interspeech.pdf">Dual-Constrained Dynamical Neural ODEs for Ambiguity-aware Continuous Emotion Prediction</a></em>,
+                                    <strong>INTERSPEECH 2024</strong></li> -->
+                                <li>J. Wu, <strong>T. Dang</strong>, V. Sethu, and E. Ambikairajah<br/>
+                                    <em><a href="https://www.researchgate.net/publication/384271111_Emotion_Recognition_Systems_Must_Embrace_Ambiguity">Emotion Recognition Systems Must Embrace Ambiguity</a></em>,
+                                    <strong>ACII Satellite Workshop EASE 2024</strong></li>
+                                <!-- <li>J. Wu, <strong>T. Dang</strong>, V. Sethu, and E. Ambikairajah<br/>
+                                    <em><a href="https://ieeexplore.ieee.org/abstract/document/9746350?casa_token=OyVUODkLFV0AAAAA:5tBB2NLYlIGKkxsk6qV2FbVouxuJZd4v95VZsfL2z7rcJfF4HfEWSBCi_3C3YqHqRGZJ2gTq5w">A novel sequential monte carlo framework for predicting ambiguous emotion states</a></em>, <strong>ICASSP, 2022</strong></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="rpts.png" alt="Time Series Modelling">
+                    </div>
+                    <div class="project-content">
+                        <h4 class="project-title"><strong><em>Time Series Modelling and Deep Learning</em></strong></h4>
+                        <em><strong>Representation learning for real-world health time series</strong></em>
+                        <p class="project-description">
+                            Time series data, including ECGs and EEGs, and acoustic signals, play a crucial role in health monitoring by providing essential insights through their continuous and dynamic characteristics. This research project seeks to investigate the capabilities and limitations of self-supervised representation learning in the analysis of real-world health time series data, particularly in the presence of distributional shifts such as data missingness and motion artifacts. By developing robust and reliable self-supervised learning models, this project aspires to enhance the accuracy and dependability of health monitoring systems for practical, real-world applications.
+                        </p>
+                        <div class="relevant-publications">
+                            <h6>Relevant Publications:</h6>
+                            <ul>
+                                <li>Y. Wu, <strong>T. Dang</strong>, D. Spathis, H. Jia, C. Mascolo<br/>
+                                    <em><a href="https://www.repository.cam.ac.uk/items/bc81f841-1370-4cd3-962a-d6eb25459d9f">StatioCL: Contrastive Learning for Time Series via Non-Stationary and Temporal Contrast</a></em>,
+                                    <strong>CIKM 2024</strong></li>
+                                <li><strong>T. Dang</strong>, Dimitriadis, A., Wu, J., Sethu, V., and Ambikairajah, E.<br/>
+                                    <em><a href="https://ieeexplore.ieee.org/abstract/document/10095778">Constrained dynamical neural ode for time series modelling: A case study on continuous emotion prediction</a></em>, 
+                                    <strong>ICASSP, 2023</strong></li>
+                                <li>T. Xia, <strong>T. Dang,</strong>, J. Han, L. Qendro, & C. Mascolo<br/>
+                                    <em><a href="https://ieeexplore.ieee.org/abstract/document/10095778">Uncertainty-aware Health Diagnostics via Class-balanced Evidential Deep Learning</a></em>,
+                                    <strong>IEEE Journal of Biomedical and Health Informatics, 2024</strong></li>
+                                <li>H. Jia, Y. Kwon, A. Orsino, <strong>T. Dang</strong>, D. Talia, and C. Mascolo<br/>
+                                    <em>TinyTTA: Efficient Test-time Adaptation via Early-exit Ensembles on Edge Devices</em>,
+                                    <strong>NeurIPS 2024</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="test.jpg" alt="Earable Sensing">
+                    </div>
+                    <div class="project-content">
+                        <h4 class="project-title"><strong><em><a href="https://earable4health.vercel.app" target="_blank">Earable Sensing</a></em></strong></h4>
+                        <em><strong>Multimodal sensing for continuous monitoring of vital signs</strong></em>
+                        <p class="project-description">
+                            This project aims to explore the potential of earable devices for continuous monitoring of vital signs. By leveraging multimodal sensing technologies integrated into earable devices, we seek to develop non-invasive methods for tracking various physiological parameters. The research focuses on overcoming challenges related to signal quality, power efficiency, and user comfort, while ensuring accurate and reliable health monitoring in everyday settings.
+                        </p>
+                        <div class="relevant-publications">
+                            <h6>Relevant Publications:</h6>
+                            <ul>
+                                <li>Quan, J., Al-Naimi, K., Wei, X., Liu, Y., Montanari, A., <strong>Dang, T.</strong><br/>
+                                    <em><a href="https://ieeexplore.ieee.org/abstract/document/10887838">Cognitive Load Monitoring via Earable Acoustic Sensing</a></em>,
+                                    <strong>ICASSP 2025</strong></li>
+                                <li>Wei, X., <strong>Dang, T.*</strong>, Al-Naimi, K., Liu, Y., Kawsar, F., Montanari, A.<br/>
+                                <em>Listening to the Mind: Earable Acoustic Sensing of Cognitive Load</em>, 
+                                    <strong>Companion of 2025 ACM UbiComp/ISWC</strong></li>
+                                <li>J. Romero, A. Ferlini, D. Spathis, <strong>T. Dang</strong>, K. Farrahi, F. Kawsar, A. Montanari<br/>
+                                    <em><a href="https://dl.acm.org/doi/abs/10.1145/3638550.3641136">OptiBreathe: An Earable-based PPG System for Continuous Respiration Rate, Breathing Phase, and Tidal Volume Monitoring</a></em>,
+                                    <strong>HotMobile 2024</strong></li>
+                                <li>D. Ma, <strong>T. Dang</strong>, M. Ding, R. Balan<br/>
+                                    <em><a href="https://dl.acm.org/doi/abs/10.1145/3631409">ClearSpeech: Improving Voice Quality of Earbuds Using Both In-Ear and Out-Ear Microphones</a></em>,
+                                    <strong>UbiComp, 2024</strong></li>
+                                <li>K. Butkow, <strong>T. Dang</strong>, A. Ferlini, D. Ma, and C. Mascolo<br/>
+                                    <em><a href="https://ieeexplore.ieee.org/abstract/document/10099317">hEARt: Motion-resilient Heart Rate Monitoring with In-ear Microphones</a></em>,
+                                    <strong>PerCom 2023</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="wide-container">
+            <p class="text-center mb-0">&copy; Ting Dang 2025</p>
+        </div>
+    </footer>
+
+    <!-- Update scripts to match index.html -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Close the navbar when a menu item is clicked
+            $('.navbar-nav>li>a').on('click', function(){
+                $('.navbar-collapse').collapse('hide');
+            });
+        });
+    </script>
+</body>
+</html>

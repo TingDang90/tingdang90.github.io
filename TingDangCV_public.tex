@@ -1,0 +1,308 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+\usepackage[svgnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+
+\newcounter{pubcount}
+\setcounter{pubcount}{71}
+\newcommand{\pubitem}{\addtocounter{pubcount}{-1}\item}
+
+% Define colors
+\definecolor{primary}{HTML}{003366}
+\definecolor{secondary}{HTML}{336699}
+
+% --- Custom Commands ---
+
+% Header
+\newcommand{\contactitem}[2]{\faIcon{#1}\ \href{#2}}
+
+% Sections
+\titleformat{\section}
+  {\large\bfseries\color{primary}}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+\titlespacing*{\section}{0pt}{1.5em}{1em}
+
+\titleformat{\subsection}
+  {\bfseries\color{secondary}}
+  {}
+  {0em}
+  {}
+\titlespacing*{\subsection}{0pt}{1em}{0.5em}
+
+% CV event
+\newcommand{\cvevent}[4]{%
+    \noindent\textbf{#1}\hfill\textit{#3}\\
+    #2, #4\par\medskip
+}
+
+\newcommand{\cveducation}[4]{%
+    \noindent\textbf{#1}\hfill\textit{#3}\\
+    #2, #4\par\medskip
+}
+
+\begin{document}
+
+% --- Personal Info ---
+\begin{center}
+    {\Huge\bfseries\color{primary} Ting Dang} \\[.2em]
+    {\large\color{secondary} Senior Lecturer, University of Melbourne} \\
+    {\small \faMapMarkerAlt\ Melbourne, Australia}
+\end{center}
+\vspace{0.5em}
+\begin{center}
+    \faEnvelope\ \href{mailto:ting.dang@unimelb.edu.au}{ting.dang@unimelb.edu.au} \quad
+    \faPhone\ +61 3 9035 4312 \quad
+    \faGlobe\ \href{https://tingdang90.github.io}{Website} \quad
+    \faLinkedin\ \href{https://www.linkedin.com/in/ting-dang-9928b6145/}{LinkedIn} \quad
+    \faGoogle\ \href{https://scholar.google.com.au/citations?user=Sb1Pj4sAAAAJ&hl=en}{Google Scholar} \quad
+    \faUniversity\ \href{https://findanexpert.unimelb.edu.au/profile/1065466-ting-dang}{UoM}
+\end{center}
+
+% --- Content ---
+
+\section*{Research Interests}
+My research interests focus on human-centred sensing and AI for health monitoring. Specifically, they include:
+\begin{itemize}[leftmargin=*, label=\textbullet]
+    \item \textbf{Machine Learning in Mobile Health:} Pioneering the development of machine learning algorithms tailored for diverse health applications, aimed at enhancing the reliability and effectiveness of ML in screening, diagnosis, and monitoring.
+    \item \textbf{Speech and Audio Processing:} Investigating advanced signal processing and machine learning techniques for speech and related applications.
+    \item \textbf{Time Series Modelling:} Enhancing representation learning for time series in real-world challenges.
+    \item \textbf{Trustworthy Deep Learning (DL):} Improving the interpretability and generalization of DL models for more reliable health outcome predictions.
+    \item \textbf{Wearable Sensing:} Examining novel sensing opportunities for health monitoring using new forms of resource-constrained IoT wearable devices.
+\end{itemize}
+
+\section*{Experience}
+\cvevent{Senior Lecturer}{University of Melbourne (UoM)}{Mar 2024 -- Present}{Australia}
+\cvevent{Senior Research Scientist}{Nokia Bell Labs}{Oct 2022 -- Dec 2023}{UK}
+\cvevent{Senior Research Associate}{University of Cambridge}{Jan 2021 -- Oct 2022}{UK}
+\cvevent{Research Associate}{University of New South Wales (UNSW)}{May 2018 -- Dec 2020}{Australia}
+
+\section*{Education}
+\cveducation{Ph.D.}{University of New South Wales (UNSW)}{Aug 2014 -- Jun 2018}{Australia}
+\cveducation{M.Eng.}{Northwestern Polytechnical University}{Sep 2012 -- Mar 2015}{China}
+\cveducation{B.Eng.}{Northwestern Polytechnical University}{Sep 2008 -- Mar 2012}{China}
+
+\setlist{itemsep=-0.2em}
+\section*{Selected Honors}
+\begin{itemize}[leftmargin=*, label=\textbullet]
+    \item Finalist, Rising Star (Academics), STEM Women in Color Award 2025.
+    \item Best Poster Award (PhD Forum) at AJCAI 2024.
+    \item Best Paper Award at ACII 2023.
+    \item Top 3\% of accepted papers at ICASSP 2023.
+    \item Shortlisted candidate for Asian Dean's Forum 2022 The Rising Stars - Women in Engineering Grant, 2022.
+    \item IEEE Early Career Writing Retreat Grant, 2019.
+    \item Distinguished Reviewer Award for IEEE Transactions on Affective Computing, 2019.
+    \item Outstanding Reviewer Award for Expert Systems With Applications (Elsevier), 2018.
+    \item ISCA (International Speech Communication Association) Grant, Interspeech, Stockholm 2017.
+    \item Highly Commended Presentation (6 finalists) at Postgraduate Research Symposium, UNSW, 2017.
+    \item 2nd place in Audio/Video Emotion Challenge (AVEC) Workshop, ACM Multimedia, 2015.
+    \item Tuition Fee Scholarship (TFS) plus Research Stipend from UNSW, 2014-2018.
+    \item Top-up Scholarship from Data61, CSIRO, Australia, 2014-2018.
+    \item First-Class Prize, Underwater Signal Technology Competition, NWPU, 2013.
+    \item Excellent Bachelor Graduation Thesis Award, NWPU, 2012.
+\end{itemize}
+
+\section*{Publications and Patents}
+\subsection*{Journals}
+\begin{enumerate}[leftmargin=*, label={[\thepubcount]}]
+    \pubitem Wu, J., Dang, T., Sethu, V., Ambikairajah, E. (2025). How many raters do we need? Analyses of uncertainty in estimating ambiguity-aware emotion labels. \textit{IEEE Transactions on Affective Computing}. \textbf{\textcolor{red}{[Best of ACII 2023]}}
+    \pubitem Liu, M., Zhu, M., Dong, Q., Dang, T.\textsuperscript{*}, Ma, J., Ren, J., Xia, F. (2025). Data-Efficient Psychiatric Disorder Detection via Self-supervised Learning on Frequency-enhanced Brain Networks. \textit{ACM Transactions on Computing for Healthcare}.
+    \pubitem Vavaroutas, S., Dang, T., Rocheteau, E., Mascolo, C. (2025). SQUIREDL: Sparse Sequence-to-Sequence Uncertainty Estimation in Evidential Deep Learning. \textit{ACM Transactions on Computing for Healthcare}.
+    \pubitem Tang, X., Huang, J., Lin, Y., Dang, T., Cheng, J. (2025). Speech Emotion Recognition via CNN-Transformer and Multidimensional Attention Mechanism. Speech Communication.
+    \pubitem Dang, T., Jia, H. (2024). Multimodal Large Language Models in Human-centered Health: Practical Insights. IEEE Pervasive Computing.
+    \pubitem Butkow, K. J., Dang, T., Ferlini, A., Ma, D., Liu, Y., \& Mascolo, C. (2024). An evaluation of heart rate monitoring with in-ear microphones under motion. Pervasive and Mobile Computing.
+    \pubitem Xia, T., Dang, T., Han, J., Qendro, L., \& Mascolo, C. (2024). Uncertainty-aware Health Diagnostics via Class-balanced Evidential Deep Learning. IEEE Journal of Biomedical and Health Informatics.
+    \pubitem Ma, D., Dang, T., Ding, M., \& Balan, R. (2024). ClearSpeech: Improving Voice Quality of Earbuds Using Both In-Ear and Out-Ear Microphones. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 7(4), 1-25.
+    \pubitem Demirel, B. U., Dang, T., Al-Naimi, K., Kawsar, F., \& Montanari, A. (2024). Unobtrusive Air Leakage Estimation for Earables with In-ear Microphones. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 7(4), 1-29.
+    \pubitem Dang, T., Spathis, D., Ghosh, A., Mascolo, C. (2023). Human-centered AI for mobile health sensing: challenges and opportunities. Royal Society Open Science. \textbf{\textcolor{red}{[Featured in Special Collection]}}
+    \pubitem Han, J., Montagna, M., Grammenos, A., Xia, T., Bondareva, E., Brown, C., Chauhan, J., Dang, T., Spathis, D., Floto, A., Cicuta, P., Mascolo, C. (2023). Comparing Listening Performance for COVID-19 Detection between Clinicians and Machine Learning: A Comparative Study. Journal of Medical Internet Research.
+    \pubitem Wickramasinghe, B., Ambikairajah, E., Sethu, V., Epps, J., Li, H., \& Dang, T. (2023). DNN controlled adaptive front-end for replay attack detection systems. Speech Communication, 154, 102973.
+    \pubitem Dang, T., Han, J.\textsuperscript{*}, Xia, T.\textsuperscript{*}, Spathis, D., Bondareva, E., Brown, C., Chauhan, J., Grammenos, A., Hasthanasombat, A., Floto, A., Cicuta, P., Mascolo, C. (2022). Exploring Longitudinal Cough, Breath, and Voice Data for COVID-19 Disease Progression Prediction via Sequential Deep Learning. Journal of Medical Internet Research.\textbf{\textcolor{red}{[Media Coverage]}}
+    \pubitem Wu, J., Dang, T., Sethu, V., Ambikairajah, E. (2022). A Novel Markovian Framework for Integrating Absolute and Relative Ordinal Emotion Information. IEEE Transactions on Affective Computing.
+    \pubitem Han, J.\textsuperscript{*}, Xia, T.\textsuperscript{*}, Spathis, D., Bondareva, E., Brown, C., Chauhan, J., Dang, T., Grammenos, A., Hasthanasombat, A., Floto, A., Cicuta, P., Mascolo, C. (2021). Sounds of COVID-19: Exploring Realistic Performance of Audio-based Digital Testing. NPJ Digital Medicine (Nature Portfolio). \textbf{\textcolor{red}{[Media Coverage]}}
+    \pubitem Wu, J., Dang, T., Sethu, V., Ambikairajah, E. (2021). Multimodal Affect Models: An Investigation of Relative Salience of Audio and Visual Cues for Emotion Prediction. Frontiers in Computer Science.
+    \pubitem Dang, T., Sethu, V., Ambikairajah, E. (2018). Compensation Techniques for Speaker Variability in Continuous Emotion Prediction. IEEE Transactions on Affective Computing.
+\end{enumerate}
+
+\subsection*{Conferences}
+\begin{enumerate}[leftmargin=*, label={[\thepubcount]}]
+    \pubitem Hu, C., Pham, H., Dang, T., Li, J., Balan, R., Ma, D. From Cheap to Chic: Enhancing Music Playback Quality of Budget Earphones via Hardware-Aware Learning. SenSys 2026.
+    \pubitem Dong, J., Jia, H., Chatterjee, S., Ghosh, A., Bailey, J., Dang, T. E-BATS: Efficient Backpropagation-Free Test-Time Adaptation for Speech Foundation Models. NeurIPS 2025.
+    \pubitem Gao, Y., Scamarcia, M., Fernandez-Marques, J., Naseri, M., Ng, C., Stripelis, D., Li, Z., Shen, T., Bai, J., Chen, D., Zhang, Z., Hu, R., Song, I., KangYoon, L., Jia, H., Dang, T., Wang, J., Liu, Z., Beutel, D., Lyu, L., Lane, N. FlowerTune: A Cross-Domain Benchmark for Federated Fine-Tuning of Large Language Models. NeurIPS 2025 Datasets and Benchmarks.
+    \pubitem Wang, X., Dang, T., Zhang, X., Kostakos, V., Witbrock, M. J., Jia, H. HealthSLM-Bench: Benchmarking Small Language Models for Mobile and Wearable Healthcare Monitoring. NeurIPS 2025 GenAI4Health Workshop.
+    \pubitem Zhang, S., Jia, H., Li, S., Dang, T., Hu, Y., Yi, X., Li, H. Position: Human-Robot Interaction in Embodied Intelligence Demands a Shift From Static Privacy Controls to Dynamic Learning. NeurIPS 2025 LAW Workshop.
+    \pubitem Liu, M., Wang, C., Chen, L., Le, N, Tewari, N., Dang, T., Ma, J., Xia, F. Structure Matters: Brain Graph Augmentation via Learnable Edge Masking for Data-efficient Psychiatric Diagnosis. AJCAI 2025.
+    \pubitem Dang, T., Jeyaseelan, T., Ambikairajah, E., Sethu, V. Characterization of Speech Similarity Between Australian Aboriginal and High-Resource Languages: A Case Study on Dharawal. APSIPA ASC 2025.
+    \pubitem Xiao, Y., Dang, T., Das, R. RawTFNet: A Lightweight CNN Architecture for Speech Anti-spoofing. APSIPA ASC 2025.
+    \pubitem Jia, H., Fu, S., Xia, F., Kostakos, V., Dang, T. Beyond Scale: Small Language Models are Comparable to GPT-4 in Mental Health Understanding. ACII 2025 LBR.
+    \pubitem Wei, X., Dang, T.\textsuperscript{*}, Al-Naimi, K., Liu, Y., Kawsar, F., Montanari, A. Listening to the Mind: Earable Acoustic Sensing of Cognitive Load. Companion of the 2025 ACM UbiComp/ISWC.
+    \pubitem Zhang, S., Ma, Y., Hu, Y., Dang, T., Jia, H., Yi, X., Li, H. From Patient Burdens to User Agency: Designing for Real-Time Protection Support in Online Health Consultations. Companion of the 2025 ACM UbiComp/ISWC.
+    \pubitem Jia, H., Chatterjee, S., Keikhosrokiani, P., Dang, T. WellComp 2025: Eighth International Workshop on Computing and Software Systems for Well-Being. Companion of the 2025 ACM UbiComp/ISWC.
+    \pubitem Chen, J., You, L., Dang, T., Liu, X., Zhang, H. Self-Supervised rU-net With Spectrum Branch: A Novel Framework for Subject-independent Emotion Recognition based on Peripheral Physiological Signals. IEEE SMC 2025.
+    \pubitem Halim, J., Wang, S., Jia, H., Dang, T. Token-Level Logits Matter: A Closer Look at Speech Foundation Models for Ambiguous Emotion Recognition. INTERSPEECH 2025.
+    \pubitem Ambikairajah, E., Wu, J., Dang, T., Sethu, V. A Study of Speech Embedding Similarities Between Australian Aboriginal and High-Resource Languages. INTERSPEECH 2025.
+    \pubitem Izhar, A., Japar, N., Idris, N., Dang, T. MicarVLMoE: A Modern Gated Cross-Aligned Vision-Language Mixture of Experts Model for Medical Image Captioning and Report Generation. IJCNN 2025 TAIM Workshop.
+    \pubitem Hong, X., Gong, Y., Sethu, V., Dang, T. AER-LLM: Ambiguity-aware Emotion Recognition Leveraging Large Language Models. ICASSP 2025.
+    \pubitem Quan, J., Al-Naimi, K., Wei, X., Liu, Y., Montanari, A., Dang, T. Cognitive Load Monitoring via Earable Acoustic Sensing. ICASSP 2025.
+    \pubitem Jia, H., Kwon, Y., Orsino, A., Dang, T., Talia, D., Mascolo, C. TinyTTA: Efficient Test-time Adaptation via Early-exit Ensembles on Edge Devices. NeurIPS 2024.
+    \pubitem Wang, X., Dang, T., Kostakos, V., Jia, H. Efficient and Personalized Mobile Health Event Prediction via Small Language Models. MobiCom Workshop ELFCom 2024.
+    \pubitem Dang, T., Gashi, S., Spathis, D., Hoelzemann, A. WellComp 2024: Seventh International Workshop on Computing for Well-Being. In Companion of the 2024 ACM UbiComp.
+    \pubitem Wu, Y., Dang, T., Spathis, D., Jia, H., Mascolo, C. StatioCL: Contrastive Learning for Time Series via Non-Stationary and Temporal Contrast. CIKM 2024.
+    \pubitem Wu, J., Dang, T., Sethu, V., Ambikairajah, E. Emotion Recognition Systems Must Embrace Ambiguity. ACII Workshop EASE 2024.
+    \pubitem Hu, Y., Zhang, S., Dang, T., Jia, H., Salim, F., Hu, W., Quigley, A. Exploring Large-Scale Language Models to Evaluate EEG-Based Multimodal Data for Mental Health. In Companion of the 2024 ACM UbiComp.
+    \pubitem Wu, J., Dang, T., Sethu, V., Ambikairajah, E. (2024). Dual-Constrained Dynamical Neural ODEs for Ambiguity-aware Continuous Emotion Prediction. INTERSPEECH 2024.
+    \pubitem Shahid, I., Al-Naimi, K., Dang, T., Liu, Y., Kawsar, F., Montanari, A. (2024). Towards Enabling DPOAE Estimation on Single-speaker Earbuds. ICASSP 2024.
+    \pubitem Nan, Z., Dang, T., Sethu, V., Ambikairajah, E. (2024). Variational Connectionist Temporal Classification for Order-Preserving Sequence Modeling. ICASSP 2024.
+    \pubitem Romero, J., Ferlini, A., Spathis, D., Dang, T., Farrahi, K., Kawsar, F., Montanari, A. (2024). OptiBreathe: An Earable-based PPG System for Continuous Respiration Rate, Breathing Phase, and Tidal Volume Monitoring. HotMobile 2024.
+    \pubitem Dang, T., Han, J.\textsuperscript{*}, Xia, T.\textsuperscript{*}, Bondareva, E., Brown, C., Chauhan, J., Grammenos, A., Spathis, D., Cicuta, P., Mascolo, C. (2023). Conditional Neural ODE Processes for Individual Disease Progression Forecasting: A Case Study on COVID-19. ACM KDD 2023. 
+    \pubitem Wu, J., Dang, T., Sethu, V., Ambikairajah, E. (2023). Belief Mismatch Coefficient (BMC): A Novel Interpretable Measure of Prediction Accuracy for Ambiguous Emotion States. Affective Computing and Intelligent Interaction (ACII) 2023. \textbf{\textcolor{red}{[Best Paper Award]}}
+    \pubitem Wu, J., Dang, T., Sethu, V., Ambikairajah, E. (2023). From Interval to Ordinal: A HMM-based Approach for Emotion Label Conversion. INTERSPEECH 2023.
+    \pubitem Dang, T., Dimitriadis, A., Wu, J., Sethu, V., Epps, J., Ambikairajah, E. (2023). Constrained Dynamic Neural ODE for Time Series Modelling: A Case Study on Continuous Emotion Prediction. ICASSP 2023. \textbf{\textcolor{red}{[Top 3\% Paper Award]}}
+    \pubitem Gashi, S., Spathis, D., Dang, T., Hoelzemann, A. WellComp 2023: Sixth International Workshop on Computing for Well-Being. WellComp Workshop at UbiComp 2023.
+    \pubitem Butkow, K. J., Dang, T., Ferlini, A., Ma, D., \& Mascolo, C. (2023). hEARt: Motion-resilient Heart Rate Monitoring with In-ear Microphones. PerCom 2023.
+    \pubitem Vavaroutas, S., Dang, T., Rocheteau, E., Mascolo, C. Uncertainty Estimation for Sequence-to-Sequence Regression on Sparse Time Series. MobiUK 2023.
+    \pubitem Hu, C., Ma, X., Ma, D., Dang, T. (2023). Lightweight and Non-invasive User Authentication on Earables. HotMobile 2023.
+    \pubitem Xia, T., Han, J., Qendro, L., Dang, T., Mascolo, C. Hybrid-EDL: Improving Evidential Deep Learning for Uncertainty Quantification on Imbalanced Data. TSRML at NeurIPS 2022.
+    \pubitem Dang, T.\textsuperscript{*}, Quinnell, T.\textsuperscript{*}, Mascolo, C. (2022). Exploring Semi-supervised Learning for Audio-based COVID-19 Detection using FixMatch. INTERSPEECH 2022.
+    \pubitem Wu, J., Dang, T., Sethu, V., Epps, J., Ambikairajah, E. (2022). A Novel Sequential Monte Carlo Framework for Predicting Ambiguous Emotion States. ICASSP 2022.
+    \pubitem Xia, T., Spathis, D., Ch, J., Grammenos, A., Han, J., Hasthanasombat, A., Bondareva, E., Dang, T., Floto, A., Cicuta, P., Mascolo, C. (2021). COVID-19 Sounds: A Large-Scale Audio Dataset for Digital COVID-19 Detection. NeurIPS Datasets and Benchmarks Track, 2021.
+    \pubitem Xia, T., Han, J., Qendro, L., Dang, T., \& Mascolo, C. (2021). Uncertainty-Aware COVID-19 Detection from Imbalanced Sound Data. INTERSPEECH 2021.
+    \pubitem B., Deboshree, Dang, T., Sethu, V., Ambikairajah, E., Fernando, S. (2019). A Novel Bag-of-Optimised-Clusters Front-End for Speech-based Continuous Emotion Prediction. Affective Computing and Intelligent Interaction (ACII) 2019.
+    \pubitem Ouyang, A., Dang, T., Sethu, V., Ambikairajah, E. (2019). Speech-Based Emotion Prediction: Can a Linear Model Work? INTERSPEECH 2019.
+    \pubitem Gamage, K., Dang, T., Sethu, V., Epps, J., Ambikairajah, E. (2018). Speech-based Continuous Emotion Prediction by Learning Perception Responses Related to Salient Events: A Study based on Vocal Affect Bursts and Cross-Cultural Affect in AVEC 2018. Proceedings of the 8th International Workshop on Audio/Visual Emotion Challenge, in conjunction with ACM MM, 2018.
+    \pubitem Dang, T., Sethu, V., Ambikairajah, E. (2018). Dynamic Multi-rater Gaussian Mixture Regression Incorporating Temporal Dependencies of Emotion Uncertainty Using Kalman Filters. ICASSP 2018.
+    \pubitem Dang, T., Sethu, V., Epps, J., Ambikairajah, E. (2017). An Investigation of Emotion Prediction Uncertainty Using Gaussian Mixture Regression. INTERSPEECH 2017.
+    \pubitem Dang, T., Stasak, B., Huang, Z., Jayawardena, S., Atcheson, M., Hayat, M., Le, P., Sethu, V., Goecke, R., Epps, J. (2017). Investigating Word Affect Features and Fusion of Probabilistic Predictions Incorporating Uncertainty in AVEC 2017. Proceedings of the 7th International Workshop on Audio/Visual Emotion Challenge, in conjunction with ACM MM, 2017.
+    \pubitem Dang, T., Sethu, V., Ambikairajah, E. (2016). Factor Analysis Based Speaker Normalisation for Continuous Emotion Prediction. INTERSPEECH 2016.
+    \pubitem Huang, Z., Stasak, B., Dang, T., Wataraka Gamage, K., Le, P., Sethu, V., Epps, J. (2016). Staircase Regression in OA RVM, Data Selection and Gender Dependency in AVEC 2016. Proceedings of the 6th International Workshop on Audio/Visual Emotion Challenge, in conjunction with ACM MM, 2016.
+    \pubitem Huang, Z., Dang, T., Cummins, N., Stasak, B., Le, P., Sethu, V., Epps, J. (2015). An Investigation of Annotation Delay Compensation and Output-Associative Fusion for Multi-modal Continuous Emotion Prediction. Proceedings of the 5th International Workshop on Audio/Visual Emotion Challenge, in conjunction with ACM MM, 2015.
+\end{enumerate}
+
+\subsection*{Patents}
+\begin{enumerate}[leftmargin=*, label={[\thepubcount]}]
+    \pubitem Thangarajan, A., Al-naimi, K., Dang, T., Ferlini, A., Liu, Y., Montanari, A. (2025), “Power Saving”, U.S. Patent and Trademark Office.
+    \pubitem Dang, T., Al-Naimi, K., Thangarajan, A., Liu, Y., Ferlini, A., Montanari, A. (2024). Selecting Candidate Devices. U.S. Patent and Trademark Office.
+    \pubitem Al-Naimi, K., Montanari, A., Ferlini, A., Dang, T., Demirel, B. U. (2024). Cancellation of Ultrasonic Signals. U.S. Patent and Trademark Office.
+\end{enumerate}
+
+\section*{Professional Activities}
+\subsection*{Talks and Seminars}
+\begin{itemize}[leftmargin=*, label=\textbullet]
+    \item Invited seminar on 'The Future of Voice: Building Empathetic, Adaptive, and Efficient Generative AI for Speech' at Commonwealth Bank, 2025.
+    \item Invited seminar on 'Human-centered AI for Mobile Health' at Medical AI Symposium, Hokkaido University, 2025.
+    \item Invited talk on 'Unlocking the Potential of Audio: From Acoustic Sensing to Adaptive Speech Intelligence' at RIKEN-AIP-Melbourne workshop, 2025.
+    \item Invited talk on 'Advancing Mobile Health via Audio and Physiological Computing in the Era of Generative AI' at School of Mathematics and Statistics, Xi'an Jiaotong University, China, 2025.
+    \item Invited talk on 'Advancing Mobile Health via Audio and Physiological Computing in the Era of Generative AI' at School of Computer Science, Northwestern Polytechnical University, China, 2025.
+    \item Invited talk on 'Machine learning for mobile health' at School of Computer Science, UNSW, 2024.
+    \item Invited talk on 'Machine learning for mobile health' at School of Biomedical Engineering, University of Sydney, 2024.
+    \item Invited talk on 'Machine learning for mobile health via audio' at South China Normal University, China, 2023.
+    \item Invited talk on 'COVID -19 Disease Progression Prediction and Forecasting via Audio: A Longitudinal Study' by Women@CL at the University of Cambridge, UK, 2022.
+    \item Invited talk on 'Computational modeling of ambiguous emotion' in AFAR Lab at the University of Cambridge, 2022.
+    \item Invited talk on 'Machine Learning in Mobile Health via Audio: bridging the gap between AI and healthcare’ in UCLIC at the University College London, 2022.
+    \item Invited talk on 'Speech-based Emotion Prediction' at Tsinghua University, China, 2020
+\end{itemize}
+
+\subsection*{Workshop and Tutorial Organizers}
+\begin{itemize}[leftmargin=*, label=\textbullet]
+    \item Web Co-chair, Mobisys 2026
+    \item Social Media Co-chair, INTERSPEECH 2026
+    \item Challenge Co-organizer, Automatic Song Aesthetics Evaluation Challenge, ICASSP 2026
+    \item Challenge Co-organizer, Environmental Sound Deepfake Detection (ESDD) Challenge, ICASSP 2026
+    \item Special Session Co-organizer, Scalable and Efficient Signal Processing for Multimodal AI Systems (ESPRESSO), APSIPA ASC 2025
+    \item Workshop Co-organizer, WellComp Workshop, UbiComp, 2025 
+    \item Workshop Co-chair, Multi-Biological Sensing Data for Speech and Language Deterioration Prediction, ACM MM Asia 2024
+    \item Co-chair, Industry Perspectives, MobileHCI 2024
+    \item Workshop Co-organizer, WellComp Workshop, UbiComp, 2024
+    \item Tutorial Co-organizer, Wearable Eye and Audio for Affect Analysis, ACII 2023
+    \item Tutorial Co-organizer, An Introduction to Wearable Eye and Speech for Affect Analysis, ICMI 2023
+    \item Workshop Co-organizer, WellComp Workshop 2023, UbiComp
+\end{itemize}
+
+\subsection*{Editor, Technical Program Committee and Reviewers}
+\begin{itemize}[leftmargin=*, label=\textbullet]
+    \item Editor of Computer Speech and Languages, 2025 - Present
+    \item Editor of IEEE Pervasive Computing, 2024 - Present
+    \item Guest Editor of Special Issue on State of the Art in Wearable Sensors for Health Monitoring @ Sensors, 2025
+    \item Senior PC for AAAI, 2023 - Present
+    \item Area Chair for ICASSP, 2025 - Present
+    \item TPC for Flute workshop (ICASSP 2025), HumanSys workshop (ACM SenSys 2024, 2025)
+    \item Reviewer for 20+ Journals: Nature Reviews Bioengineering, Scientific Reports, IEEE TAC, IEEE TASLP, IEEE TIFS, IEEE TETCI, JASA, IMWUT, Speech Communications, Computer Speech & Language, ACM Health, etc.
+    \item PC for 10+ Conferences: NeurIPS, IJCAI, ICASSP, INTERSPEECH, APSIPA, ACII, IEEE SLT, etc.
+\end{itemize}
+
+\subsection*{Outreach and Public Engagement}
+\begin{itemize}[leftmargin=*, label=\textbullet]
+    \item Panelist, ``IEEE Women in Engineering Panel Discussion'', 2025
+    \item Mentor, ``Students Meet Experts'' session, INTERSPEECH, 2025
+    \item Invited panelist, ``AI for Healthcare'' at BioGrid 20th Anniversary, 2024
+    \item Guest, ``Universities and the Rise of AI -- Part 2: A Peek into Large Language Models'' podcast, University of Melbourne, 2024
+    \item Invited speaker, ``Women in STEM'' event, University of Cambridge, 2022
+\end{itemize}
+
+\setlist{itemsep=0.2em}
+\section*{Supervisions and Teaching}
+\subsection*{Current Members}
+\begin{itemize}[leftmargin=*, label=\textbullet]
+    \item \textbf{Ph.D.}
+    \begin{itemize}[leftmargin=*, label=\textendash]
+        \item Ye Bai, UoM (2025-): co-supervised with David O'Neal and Dale Morrison.
+        \item Jiaheng Dong, UoM (2025-): co-supervised with Abhirup Ghosh and Jean Honorio Carrillo.
+        \item Siyi Wang, UoM (2025-): co-supervised with James Bailey.
+        \item Yang Xiao, UoM (2025-): co-supervised with Eun-Jung Holden.
+        % \item Shujie Li, UoM (Incoming): co-supervised with Jianzhong Qi.
+        \item Jie Huang, UoM (2025-): co-supervised with Daniel Capurro Nario and Galit Almoznino.
+        \item Jian Xiang, UNSW (2025-): co-supervised with Vidhya Sethu.
+        \item Pravina Mylvaganam, UNSW (2025-): mentored with Eliathamby Ambikairajah.
+        \item Mujie Liu, Federation University (2024-): mentored with Feng Xia.
+        \item Yu Wu, University of Cambridge (2022-): mentored with Cecilia Mascolo.
+    \end{itemize}
+    \item \textbf{Postgraduate and Undergraduate} 
+    \begin{itemize}[leftmargin=*, label=\textendash]
+        \item Selina Lim, Benjamin Hong, Di Zhu, Sung Kyun Chung (UoM, 2025)
+        \item Trevor Adelson, Qiuchi Hu, Jinuo Sun, Jiajun Lu, Jiasheng Xu, Haoguang Zhou, Hongyu Jin (UoM, 2025)
+    \end{itemize}
+
+\subsection*{Alumni}
+\begin{itemize}[leftmargin=*, label=\textbullet]
+    \item \textbf{Ph.D.}
+    \begin{itemize}[leftmargin=*, label=\textendash]
+        \item Zheng Nan, UNSW (2021-2025): co-supervised with Vidhya Sethu and Beena Ahmed. \\
+        \textit{Current position: Postdoctoral Researcher at UNSW.}
+        \item Jingyao Wu, UNSW (2020-2024): co-supervised with Vidhya Sethu and Eliathamby Ambikairajah. \\
+        \textit{Current position: Postdoctoral Fellow at MIT.}
+        \item Kayla Butkow, University of Cambridge (2021-2023): project mentoring with Prof. Cecilia Mascolo. \\
+        \textit{Current position: CTO \& Co-founder at auryx.}
+        \item Tong Xia, University of Cambridge (2021-2023): project mentoring with Prof. Cecilia Mascolo. \\
+        \textit{Current position: Assisstant Professor at Tsinghua University.}
+        \item Sotirios Vavaroutas, University of Cambridge (2022): Ph.D. project mentoring with Prof. Cecilia Mascolo. 
+        \item Xijia Wei, University College London (2023): Internship mentoring at Nokia Bell Labs.
+    \end{itemize}
+    \item \textbf{Postgraduate and Undergraduate}
+    \begin{itemize}[leftmargin=*, label=\textendash]
+        \item Wenda Zhang, Shuaixin Xu, Xi Chen (UoM, 2025); Trini Manoj Jeyaseelan (UNSW, 2025)
+        \item Jule Valendo Halim, Xin Hong, Feixiang Zheng, Xuanang Li, Xin Wang (UoM, 2024)
+        \item Tom Quinnell (University of Cambridge, 2021)
+        \item Haobing Zhu, Yang Yu, Jinhao Gu, Anubhuti Gupta (UNSW, 2020)
+        \item Anda Ouyang, Mo Li (UNSW, 2018)
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Teaching}
+\begin{itemize}[leftmargin=*, label=\textbullet]
+    \item COMP90089: Machine Learning Applications for Health, 2024-2025 (~250 students, postgraduate course)
+    \item COMP90049: Introduction to Machine Learning, 2024-2025 (~250 students, postgraduate course)
+    \item Speech Processing and Machine Learning (~25 students, postgraduate course)
+    \item Digital Signal Processing (~15-40 students, undergraduate course)
+    \item Strategic Leadership \& Ethics (~20 students; postgraduate course)
+    \item Electrical Circuits (~80 students, undergraduate course)
+    \item Design Proficiency (~60 students, undergraduate course)
+\end{itemize}
+
+\end{document}

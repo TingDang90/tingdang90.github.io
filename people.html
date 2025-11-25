@@ -1,0 +1,470 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ting Dang | People</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Ting Dang">
+    <meta name="description" content="University of Melbourne, Australia">
+    <meta name="og:title" content="Ting Dang">
+    
+    <!-- Change to Bootstrap 3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="mel.jpg" type="image/x-icon">
+    
+    <!-- Keep existing styles but update navbar related styles -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            line-height: 1.5;
+            padding-top: 50px;
+        }
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        .section-title {
+            color: #336699;
+            border-bottom: 2px solid #336699;
+            padding-bottom: 8px;
+            margin-bottom: 25px;
+        }
+        .content-section {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,.1);
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        .sub-section {
+            margin-bottom: 20px;
+        }
+        .sub-section h5 {
+            font-weight: bold;
+            color: #336699;
+            margin-bottom: 12px;
+        }
+        .career-transition {
+            color: #28a745;
+            font-style: italic;
+            font-weight: 500;
+        }
+        .career-transition::before {
+            content: "→ ";
+            font-weight: bold;
+        }
+        .student-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .student-item {
+            width: 48%;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .student-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+        .student-info {
+            flex: 1;
+        }
+        .student-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 15px 0;
+            margin-top: 25px;
+        }
+        .student-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 10px 0;
+        }
+        .student-table td {
+            width: 33.33%;
+            vertical-align: top;
+            padding: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        @media (max-width: 767px) {
+            .navbar-nav {
+                margin: 0;
+            }
+            .navbar-nav > li {
+                float: none;
+            }
+            .navbar-nav > li > a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .navbar-collapse {
+                border-top: 1px solid #444;
+            }
+            .student-item {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .student-photo {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .student-table {
+                border-spacing: 0;
+            }
+            .student-table td {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .navbar-nav {
+                float: right;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .student-item {
+                width: 100%;
+            }
+        }
+
+        .wide-container {
+            width: 95%;
+            max-width: 1800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .content-section {
+            margin-top: 30px;
+        }
+
+        @media (max-width: 767px) {
+            .wide-container {
+                width: 98%;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        /* Add lab banner styles from index.html */
+        .lab-banner-container {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 50px;
+            padding: 0;
+            position: relative;
+        }
+        
+        .lab-banner {
+            position: relative;
+            height: 600px;
+            width: 100%;
+            overflow: hidden;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .lab-banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+            z-index: 1;
+        }
+        
+        .lab-banner .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            text-align: center;
+            width: 80%;
+            max-width: 1000px;
+        }
+        
+        .lab-banner h2 {
+            color: white;
+            margin-bottom: 30px;
+            font-weight: bold;
+            font-size: 56px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        
+        .lab-banner .lead {
+            color: white;
+            font-size: 24px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+            line-height: 1.6;
+        }
+        
+        .lab-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: 0;
+        }
+        
+        /* Update mobile styles */
+        @media (max-width: 767px) {
+            .lab-banner {
+                height: 400px;
+            }
+            .lab-banner h2 {
+                font-size: 36px;
+            }
+            .lab-banner .lead {
+                font-size: 20px;
+            }
+            /* ... rest of existing mobile styles ... */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Update navbar to match index.html -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="wide-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Ting Dang</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="research_projects.html">Research Projects</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="people.html">Team</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="teaching_and_services.html">Teaching & Services</a></li>
+                    <li><a href="hiring.html">Hiring</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wide-container content-section">
+        <h2 class="section-title">People</h2>
+        
+        <div class="content-section">
+            <div class="sub-section">
+                <h5>Current students</h5>
+                <p><em>PhD supervision</em></p>
+                <div class="student-list">
+                    <div class="student-item">
+                        <img src="jiaheng.jpg" alt="Jiaheng Dong" class="student-photo">
+                        <div class="student-info">
+                            <div class="student-name">
+                                <a href="https://www.linkedin.com/in/jiaheng-dong-a9a575319/" target="_blank">Jiaheng Dong</a> (2025-)
+                            </div>
+                            <div>University of Melbourne</div>
+                            <div>Co-supervised with Abhirup Ghosh and Jean Honorio Carrillo</div>
+                        </div>
+                    </div>
+                    <div class="student-item">
+                        <img src="siyi.jpg" alt="Siyi Wang" class="student-photo">
+                        <div class="student-info">
+                            <div class="student-name">
+                                <a href="https://www.linkedin.com/in/siyi-wang-306316160/" target="_blank">Siyi Wang</a> (2025-)
+                            </div>
+                            <div>University of Melbourne</div>
+                            <div>Co-supervised with James Bailey</div>
+                        </div>
+                    </div>
+                    <div class="student-item">
+                        <img src="xiao.png" alt="Yang Xiao" class="student-photo">
+                        <div class="student-info">
+                            <div class="student-name">
+                                <a href="https://swagshaw.github.io/" target="_blank">Yang Xiao</a> (2025-)
+                            </div>
+                            <div>University of Melbourne</div>
+                            <div>Co-supervised with Eun-Jung Holden</div>
+                        </div>
+                    </div>
+                    <div class="student-item">
+                        <img src="girl.jpg" alt="Ye Bai" class="student-photo">
+                        <div class="student-info">
+                            <div class="student-name">Ye Bai (2025-)</div>
+                            <div>University of Melbourne</div>
+                            <div>Co-supervised with David O'Neal and Dale Morrison</div>
+                        </div>
+                    </div>
+                    <div class="student-item">
+                        <img src="jie.jpg" alt="Jie Huang" class="student-photo">
+                        <div class="student-info">
+                            <div class="student-name">
+                                <a href="https://www.linkedin.com/in/jie-huang-hayley/" target="_blank">Jie Huang</a> (2025-)
+                            </div>
+                            <div>University of Melbourne</div>
+                            <div>Co-supervised with Daniel Capurro Nario and Galit Almoznino</div>
+                        </div>
+                    </div>
+                    <div class="student-item">
+                        <img src="jian.jpg" alt="Jian Xiang" class="student-photo">
+                        <div class="student-info">
+                            <div class="student-name">Jian Xiang (2025-)</div>
+                            <div>University of New South Wales (UNSW)</div>
+                            <div>Co-supervised with Vidhyasaharan Sethu</div>
+                        </div>
+                    </div>
+                </div>
+
+                <p><em>PhD mentoring</em></p>
+                <div class="student-list">
+                    <div class="student-item">
+                        <img src="pravina.jpeg" alt="Pravina Mylvaganam" class="student-photo">
+                        <div class="student-info">
+                            <div class="student-name">
+                                <a href="https://scholar.google.com/citations?hl=en&user=TVEN08QAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Pravina Mylvaganam</a> (2025-)
+                            </div>
+                            <div>University of New South Wales</div>
+                            <div>Mentored with Eliathamby Ambikairajah</div>
+                        </div>
+                    </div>
+                    <!-- <div class="student-item">
+                        <img src="mujieliu.jpeg" alt="Mujie Liu" class="student-photo">
+                        <div class="student-info">
+                            <div class="student-name"><a href="https://scholar.google.com/citations?user=Cw8nwaQAAAAJ&hl=zh-CN">Mujie Liu</a> (2024-)</div>
+                            <div>Federation University</div>
+                            <div>Mentored with Feng Xia</div>
+                        </div>
+                    </div> -->
+                </div>
+                
+                <p><em>Graduate students (University of Melbourne)</em></p>
+                <div class="table-responsive">
+                    <table class="student-table">
+                        <tr>
+                            <td>• Selina Lim (2025)</td>
+                            <td>• Benjamin Hong (2025)</td>
+                            <td>• Di Zhu (2025)</td>
+                            <td>• Sung Kyun Chung (2025)</td>
+                        </tr>
+                        <tr>
+                            <td>• Trevor Adelson (2025)</td>
+                            <td>• Qiuchi Hu (2025)</td>
+                            <td>• Jinuo Sun (2025)</td>
+                            <td>• Jiajun Lu (2025)</td>
+                        </tr>
+                        <tr>
+                            <td>• Jiasheng Xu (2025)</td>
+                            <td>• Haoguang Zhou (2025)</td>
+                            <td>• Hongyu Jin (2025)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <h5>Alumni</h5>
+                <p><em>PhD</em></p>
+                <div class="table-responsive">
+                    <table class="student-table">
+                        <tr>
+                            <td>• <a href="https://yvonneywu.github.io/">Yu Wu</a> (2022-2025), University of Cambridge, mentored with Cecilia Mascolo. <span class="career-transition">Postdoc at Dartmouth College</span></td>
+                        </tr>
+                        <tr>
+                            <td>• <a href="https://scholar.google.com.au/citations?user=iuyHfXEAAAAJ&hl=zh-CN">Zheng Nan</a> (2021-2025), UNSW, Co-supervised with Vidhyasaharan Sethu and Beena Ahmed. <span class="career-transition">Postdoc at UNSW</span></td>
+                        </tr>
+                        <tr>
+                            <td>• <a href="https://sites.google.com/view/jingyaowu/home?authuser=0">Jingyao Wu</a> (2020-2024), UNSW, Co-supervised with Vidhyasaharan Sethu and Eliathamby Ambikairajah. <span class="career-transition">Postdoc at MIT</span></td>
+                        </tr>
+                        <tr>
+                            <td>• <a href="https://xtxiatong.github.io/">Tong Xia</a> (2021-2023), University of Cambridge, mentored with Cecilia Mascolo. <span class="career-transition">Assistant Professor at Tsinghua University</span></td>
+                        </tr>
+                        <tr>
+                            <td>• <a href="https://xijiawei.com/">Xijia (Simon) Wei</a> (2023), Internship at Nokia Bell Labs UK, University College London</td>
+                        </tr>
+                        <tr>
+                            <td>• <a href="https://www.cst.cam.ac.uk/people/sv455">Sotirios Vavaroutas</a> (2022), University of Cambridge, project mentoring with Cecilia Mascolo.</td>
+                        </tr>
+                        <tr>
+                            <td>• <a href="https://www.cst.cam.ac.uk/people/kjb85">Kayla Butkow</a> (2021-2023), University of Cambridge, project mentoring with Cecilia Mascolo. <span class="career-transition">CTO & Co-founder at auryx</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="mt-4"></div> <!-- Added spacing -->
+                <p><em>Graduate and Undergraduate</em></p>
+                <div class="table-responsive">
+                    <table class="student-table">
+                        <tr>
+                            <td>• Wenda Zhang (2025)</td>
+                            <td>• Shuaixin Xu (2025)</td>
+                            <td>• Xi Chen (2025)</td>
+                            <td>• Trini Manoj Jeyaseelan (2025), UNSW</td>
+                        </tr>
+                        <tr>
+                            <td>• Jule Valendo Halim (2024)</td>
+                            <td>• Xin Hong (2024)</td>
+                            <td>• Feixiang Zheng (2024)</td>
+                            <td>• Xuanang Li (2024)</td>
+                            <td>• Xin Wang (2024)</td>
+                        </tr>
+                        <tr>
+                            <td>• Thomas Quinnell (2021), Uni of Cambridge</td>
+                            <td>• Haobing Zhu (2020), UNSW</td>
+                            <td>• Yang Yu (2020), UNSW</td>
+                            <td>• Jinhao Gu (2020), UNSW</td>
+                            <td>• Anubhuti Gupta (2020), UNSW</td>
+                        </tr>
+                        <tr>
+                            <td>• Anda Ouyang (2018), UNSW</td>
+                            <td>• Mo Li (2018), UNSW</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="wide-container">
+            <p class="text-center mb-0">&copy; Ting Dang 2025</p>
+        </div>
+    </footer>
+
+    <!-- Update jQuery and add Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <!-- Update Bootstrap JS to version 4.5.2 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

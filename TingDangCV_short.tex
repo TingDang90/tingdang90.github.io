@@ -1,0 +1,166 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+\usepackage[svgnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+
+\newcounter{pubcount}
+\setcounter{pubcount}{71}
+\newcommand{\pubitem}{\addtocounter{pubcount}{-1}\item}
+
+% Define colors
+\definecolor{primary}{HTML}{003366}
+\definecolor{secondary}{HTML}{336699}
+
+% --- Custom Commands ---
+
+% Header
+\newcommand{\contactitem}[2]{\faIcon{#1}\ \href{#2}}
+
+% Sections
+\titleformat{\section}
+  {\large\bfseries\color{primary}}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+\titlespacing*{\section}{0pt}{1.5em}{1em}
+
+\titleformat{\subsection}
+  {\bfseries\color{secondary}}
+  {}
+  {0em}
+  {}
+\titlespacing*{\subsection}{0pt}{1em}{0.5em}
+
+% CV event
+\newcommand{\cvevent}[4]{%
+    \noindent\textbf{#1}\hfill\textit{#3}\\
+    #2, #4\par\medskip
+}
+
+\newcommand{\cveducation}[4]{%
+    \noindent\textbf{#1}\hfill\textit{#3}\\
+    #2, #4\par\medskip
+}
+
+\begin{document}
+
+% --- Personal Info ---
+\begin{center}
+    {\Huge\bfseries\color{primary} Ting Dang} \\[0.5em]
+    {\large\color{secondary} Senior Lecturer, University of Melbourne} \\[0.5em]
+    \faEnvelope\ \href{mailto:ting.dang@unimelb.edu.au}{ting.dang@unimelb.edu.au} \quad
+    \faPhone\ +61 3 9035 4312 \quad
+    \faGlobe\ \href{https://tingdang90.github.io}{Website} \quad
+    \faLinkedin\ \href{https://www.linkedin.com/in/ting-dang-9928b6145/}{LinkedIn} \quad
+    \faGoogle\ \href{https://scholar.google.com.au/citations?user=Sb1Pj4sAAAAJ&hl=en}{Google Scholar} \quad
+    \faUniversity\ \href{https://findanexpert.unimelb.edu.au/profile/1065466-ting-dang}{UoM}
+\end{center}
+
+\section*{Overview of Current Position}
+I am a Senior Lecturer in the School of Computing and Information Systems at the University of Melbourne. My research focuses on speech and audio processing, human-centred sensing and trustworthy AI, specifically:
+\begin{itemize}[leftmargin=*, label=\textbullet, itemsep=0.1em]
+    \item \textbf{Speech and Audio Processing:} Developing advanced signal processing and machine learning techniques for speech, including audio-to-action models and robust speech understanding in noisy environments.
+    \item \textbf{Trustworthy and Scalable AI:} Improving the interpretability, reliability, and generalization of deep learning models, with a focus on uncertainty-aware modelling and domain adaptation.
+    \item \textbf{Wearable Sensing on Resource-Constrained Devices:} Advancing innovative sensing methods for health monitoring by leveraging next-generation, low-power IoT wearables and embedded systems.
+\end{itemize}
+
+\section*{Employment History}
+\begin{itemize}[leftmargin=*, label=\textbullet, itemsep=0.2em]
+    \item \textbf{Senior Lecturer}, University of Melbourne, Australia (Mar 2024 -- Present)
+    \item \textbf{Senior Research Scientist}, Nokia Bell Labs, UK (Oct 2022 -- Dec 2023)
+    \item \textbf{Senior Research Associate}, University of Cambridge, UK (Jan 2021 -- Oct 2022)
+    \item \textbf{Research Associate}, University of New South Wales (UNSW), Australia (May 2018 -- Dec 2020)
+\end{itemize}
+
+\section*{Ten Career-Best Publications, Awards, and Relevant Presentations}
+
+\subsection*{Ten Selected Publications}
+\setlist{itemsep=0.1em}
+\begin{enumerate}[leftmargin=*, label={[\arabic*]}]
+    \item Dong, J., Jia, H., Chatterjee, S., Ghosh, A., Bailey, J., \textbf{Dang, T.} E-BATS: Efficient Backpropagation-Free Test-Time Adaptation for Speech Foundation Models. \textit{NeurIPS 2025}.
+    \item Wang, X., \textbf{Dang, T.}, Zhang, X., Kostakos, V., Witbrock, M. J., Jia, H. HealthSLM-Bench: Benchmarking Small Language Models for Mobile and Wearable Healthcare Monitoring. \textit{NeurIPS 2025 GenAI4Health Workshop}.
+    \item Zhang, S., Jia, H., Li, S., \textbf{Dang, T.}, Hu, Y., Yi, X., Li, H. Position: Human-Robot Interaction in Embodied Intelligence Demands a Shift From Static Privacy Controls to Dynamic Learning. \textit{NeurIPS 2025 LAW Workshop}.
+    \item Jia, H., Kwon, Y., Orsino, A., \textbf{Dang, T.}, Talia, D., Mascolo, C. TinyTTA: Efficient Test-time Adaptation via Early-exit Ensembles on Edge Devices. \textit{NeurIPS 2024}.
+    \item \textbf{Dang, T.}, Han, J., Xia, T., Bondareva, E., Brown, C., Chauhan, J., Grammenos, A., Spathis, D., Cicuta, P., Mascolo, C. Conditional Neural ODE Processes for Individual Disease Progression Forecasting: A Case Study on COVID-19. \textit{ACM KDD 2023}.
+    \item Halim, J., Wang, S., Jia, H., \textbf{Dang, T.} Token-Level Logits Matter: A Closer Look at Speech Foundation Models for Ambiguous Emotion Recognition. \textit{INTERSPEECH 2025}.
+    \item Wu, J., \textbf{Dang, T.}, Sethu, V., Ambikairajah, E. Dual-Constrained Dynamical Neural ODEs for Ambiguity-aware Continuous Emotion Prediction. \textit{INTERSPEECH 2024}.
+    \item \textbf{Dang, T.}, Quinnell, T., Mascolo, C. Exploring Semi-supervised Learning for Audio-based COVID-19 Detection using FixMatch. \textit{INTERSPEECH 2022}.
+    \item Xia, T., Spathis, D., Ch, J., Grammenos, A., Han, J., Hasthanasombat, A., Bondareva, E., \textbf{Dang, T.}, Floto, A., Cicuta, P., Mascolo, C. COVID-19 Sounds: A Large-Scale Audio Dataset for Digital COVID-19 Detection. \textit{NeurIPS Datasets and Benchmarks Track, 2021}.
+    \item Wu, J., \textbf{Dang, T.}, Sethu, V., Ambikairajah, E. How many raters do we need? Analyses of uncertainty in estimating ambiguity-aware emotion labels. \textit{IEEE Transactions on Affective Computing, 2025}.
+\end{enumerate}
+
+\subsection*{Selected Awards}
+\begin{itemize}[leftmargin=*, label=\textbullet, itemsep=0.2em]
+    \item Finalist, Rising Star (Academics), STEM Women in Color Award 2025.
+    \item Best Poster Award (PhD Forum) at AJCAI 2024.
+    \item Best Paper Award at ACII 2023.
+    \item Top 3\% of accepted papers at ICASSP 2023.
+    \item Shortlisted candidate for Asian Dean's Forum 2022 The Rising Stars - Women in Engineering Grant, 2022.
+    \item IEEE Early Career Writing Retreat Grant, 2019.
+    \item Distinguished Reviewer Award for IEEE Transactions on Affective Computing, 2019.
+    \item Outstanding Reviewer Award for Expert Systems With Applications (Elsevier), 2018.
+    \item ISCA (International Speech Communication Association) Grant, Interspeech, Stockholm 2017.
+    \item Highly Commended Presentation (6 finalists) at Postgraduate Research Symposium, UNSW, 2017.
+    \item 2nd place in Audio/Video Emotion Challenge (AVEC) Workshop, ACM Multimedia, 2015.
+    \item Tuition Fee Scholarship (TFS) plus Research Stipend from UNSW, 2014-2018.
+    \item Top-up Scholarship from Data61, CSIRO, Australia, 2014-2018.
+    % \item First-Class Prize, Underwater Signal Technology Competition, NWPU, 2013.
+    % \item Excellent Bachelor Graduation Thesis Award, NWPU, 2012.
+\end{itemize}
+
+\subsection*{Invited Seminar and Talks}
+\begin{itemize}[leftmargin=*, label=\textbullet, itemsep=0.2em]
+    \item Invited seminar on 'The Future of Voice: Building Empathetic, Adaptive, and Efficient Generative AI for Speech' at Commonwealth Bank, 2025.
+    \item Invited seminar on 'Human-centered AI for Mobile Health' at Medical AI Symposium, Hokkaido University, 2025.
+    \item Invited talk on 'Unlocking the Potential of Audio: From Acoustic Sensing to Adaptive Speech Intelligence' at RIKEN-AIP-Melbourne workshop, 2025.
+    \item Invited talk on 'Advancing Mobile Health via Audio and Physiological Computing in the Era of Generative AI' at School of Mathematics and Statistics, Xi'an Jiaotong University, China, 2025.
+    \item Invited talk on 'Advancing Mobile Health via Audio and Physiological Computing in the Era of Generative AI' at School of Computer Science, Northwestern Polytechnical University, China, 2025.
+    \item Invited talk on 'Machine learning for mobile health' at School of Computer Science, UNSW, 2024.
+    \item Invited talk on 'Machine learning for mobile health' at School of Biomedical Engineering, University of Sydney, 2024.
+    \item Invited talk on 'Machine learning for mobile health via audio' at South China Normal University, China, 2023.
+    \item Invited talk on 'COVID -19 Disease Progression Prediction and Forecasting via Audio: A Longitudinal Study' by Women@CL at the University of Cambridge, UK, 2022.
+    \item Invited talk on 'Computational modeling of ambiguous emotion' in AFAR Lab at the University of Cambridge, 2022.
+    \item Invited talk on 'Machine Learning in Mobile Health via Audio: bridging the gap between AI and healthcare’ in UCLIC at the University College London, 2022.
+    \item Invited talk on 'Speech-based Emotion Prediction' at Tsinghua University, China, 2020
+\end{itemize}
+
+\section*{Current Grant Income}
+\begin{itemize}[leftmargin=*, label=\textbullet, itemsep=0.2em]
+    \item \textbf{Google Research Fund} -- Benchmarking Auditory Cognitive Reasoning in Audio-Language Models -- \$85,000 (2025) 
+    \item \textbf{WHG Fund} -- Non-invasive Alcohol Detection using Smart Wearable Technology -- \$36,000 (2025) 
+    \item \textbf{Collaborative Seed Grant by Wuhan University} -- Emotional Speech Generation for Intelligent Dialogue Systems -- ¥50,000 (2025)
+    \item \textbf{OpenAI Researcher Access Grant} -- Multimodal LLMs for Mobile Health -- \$16,000 (2024)
+    \item \textbf{Google Cloud Research Credits} -- Speech LLMs for Health -- \$5,000 (2024)
+    \item \textbf{UoM Funding} -- Speech and Multimodal AI for Mobile Health -- \$50,000 (2024)
+    \item \textbf{Nokia Bell Labs} -- Cognitive Load Monitoring via Earable Acoustic Sensing -- \$50,000 (2023)
+\end{itemize}
+
+\section*{Supervision History}
+I have a strong track record of supervising graduate research candidates to timely completion. My experience includes supervising a diverse cohort of international students at world-leading institutions in Australia (UNSW) and the UK (University of Cambridge). My past students have consistently completed their PhDs on time (typically within 3-4 years) and have gone on to secure prestigious positions in both academia (e.g., \textbf{Postdoctoral Fellow at MIT}, \textbf{Assistant Professor at Tsinghua University}) and industry (e.g., \textbf{CTO \& Co-founder at auryx}). My students have been recognized with prestigious accolades, including \textbf{Best Paper Awards} at top-tier conferences (e.g., ACII 2023), recognition as \textbf{Rising Stars in their fields}, and the \textbf{award for outstanding overseas PhD students}.
+\subsection*{Alumni (PhD)}
+\begin{itemize}[leftmargin=*, label=\textbullet, itemsep=0.2em]
+    \item \textbf{Zheng Nan}, UNSW (2021-2025): Co-supervised with Vidhya Sethu and Beena Ahmed. \\ \textit{Current position: Postdoctoral Researcher at UNSW.}
+    \item \textbf{Jingyao Wu}, UNSW (2020-2024): Co-supervised with Vidhya Sethu and Eliathamby Ambikairajah. \\ \textit{Current position: Postdoctoral Fellow at MIT.}
+    \item \textbf{Kayla Butkow}, University of Cambridge (2021-2023): Project mentoring with Prof. Cecilia Mascolo. \\ \textit{Current position: CTO \& Co-founder at auryx.}
+    \item \textbf{Tong Xia}, University of Cambridge (2021-2023): Project mentoring with Prof. Cecilia Mascolo. \\ \textit{Current position: Assistant Professor at Tsinghua University.}
+    \item \textbf{Sotirios Vavaroutas}, University of Cambridge (2022): PhD project mentoring with Prof. Cecilia Mascolo.
+    \item \textbf{Xijia Wei}, University College London (2023): Internship mentoring at Nokia Bell Labs.
+\end{itemize}
+\subsection*{Alumni (Postgraduate and Undergraduate)}
+\begin{itemize}[leftmargin=*, label=\textbullet, itemsep=0.2em]
+    \item \textbf{University of Melbourne (2024-2025):} Wenda Zhang, Shuaixin Xu, Xi Chen, Jule Valendo Halim, Xin Hong, Feixiang Zheng, Xuanang Li, Xin Wang.
+    \item \textbf{UNSW (2018-2025):} Trini Manoj Jeyaseelan, Haobing Zhu, Yang Yu, Jinhao Gu, Anubhuti Gupta, Anda Ouyang, Mo Li.
+    \item \textbf{University of Cambridge (2021):} Thomas Quinnell.
+\end{itemize}
+\subsection*{Current Supervisions (PhD)}
+I am currently supervising and mentoring an international cohort of \textbf{9 PhD students} at the University of Melbourne and collaborating institutions of UNSW and University of Cambridge. Their research spans cutting-edge topics in scalable speech AI, and multimodal learning for health. My current PhD students include Jiaheng Dong, Siyi Wang, Yang Xiao, Jie Huang, Jian Xiang, Ye Bai (incoming), Pravina Mylvaganam, Mujie Liu, and Yu Wu.
+\subsection*{Current Supervisions (Postgraduate and Undergraduate)}
+I am also supervising a vibrant group of \textbf{11 postgraduate and undergraduate students} at the University of Melbourne on projects related to speech AI, trustworthy AI, and AI agents. My current students include Selina Lim, Benjamin Hong, Di Zhu, Sung Kyun Chung, Trevor Adelson, Qiuchi Hu, Jinuo Sun, Jiajun Lu, Jiasheng Xu, Haoguang Zhou, and Hongyu Jin.
+
+\end{document}

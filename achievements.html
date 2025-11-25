@@ -1,0 +1,461 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ting Dang | Achievements</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Ting Dang">
+    <meta name="description" content="University of Melbourne, Australia">
+    <meta name="og:title" content="Ting Dang">
+    
+    <!-- Update to Bootstrap 3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="mel.jpg" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+            padding-top: 50px;
+        }
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        .section-title {
+            color: #336699;
+            border-bottom: 2px solid #336699;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .content-section {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,.1);
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        .sub-section {
+            margin-bottom: 25px;
+        }
+        .sub-section h5 {
+            color: #336699;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .content-section ul {
+            padding-left: 20px;
+        }
+        .content-section li {
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+        .talk-item {
+            border-left: 4px solid #336699;
+            padding: 15px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            background-color: #f8f9fa;
+        }
+        .talk-item:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .talk-title {
+            font-weight: bold;
+            color: #336699;
+            margin-bottom: 5px;
+        }
+        .talk-venue {
+            font-style: italic;
+            color: #6c757d;
+        }
+        .talk-year {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .award-item {
+            background-color: #f8f9fa;
+            border-left: 3px solid #336699;
+            padding: 10px;
+            font-size: 0.9rem;
+        }
+        .award-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .award-year {
+            color: #6c757d;
+            font-style: italic;
+        }
+
+        /* Add wide-container styling to match index.html */
+        .wide-container {
+            width: 95%;
+            max-width: 1800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        @media (max-width: 767px) {
+            .navbar-nav {
+                margin: 0;
+            }
+            .navbar-nav > li {
+                float: none;
+            }
+            .navbar-nav > li > a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .navbar-collapse {
+                border-top: 1px solid #444;
+            }
+            
+            .wide-container {
+                width: 98%;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .navbar-nav {
+                float: right;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="wide-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Ting Dang</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="research_projects.html">Research Projects</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="people.html">Team</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="teaching_and_services.html">Teaching & Services</a></li>
+                    <li><a href="hiring.html">Hiring</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wide-container content-section">
+        <h2 class="section-title">Achievements</h2>
+        
+        <div class="content-section">
+            <!-- <h3 class="section-title">Grants</h3>
+            <div class="sub-section">
+                <div class="talk-item">
+                    <div class="talk-title"><strong>Multimodal LLMs for Mobile Health</strong> (USD$5K)</div>
+                    <div class="talk-venue">Google Cloud Credits Award</div>
+                    <div class="talk-year">Chief Investigator, 2024</div>
+                </div>
+                <div class="talk-item">
+                    <div class="talk-title"><strong>RiTuaL: Reliable and Trustworthy Machine Learning for Time Series Modelling in Mobile Health</strong> (~AUD$130K + Tuition Fee)</div>
+                    <div class="talk-venue">Melbourne-Birmingham Priestley Scholars Fund</div>
+                    <div class="talk-year">Primary Supervisor, joint with A. Ghosh, 2025-2027</div>
+                </div>
+            </div> -->
+
+            <h3 class="section-title">Selected Awards</h3>
+            <div class="awards-grid">
+                <div class="award-item">
+                    <div class="award-title">Finalist, Rising Star (Academics), STEM Women in Color Award</div>
+                    <div class="award-year">2025</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-title">Best poster award, PhD Forum, AJCAI 2024</div>
+                    <div class="award-year">2024</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-title">Best paper award, ACII 2023</div>
+                    <div class="award-year">2023</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-title">Top 3% paper award, ICASSP 2023</div>
+                    <div class="award-year">2023</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-title">Shortlisted candidate for Asian Dean's Forum 2022 The Rising Stars - Women in Engineering</div>
+                    <div class="award-year">2022</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-title">Distinguished reviewer award for IEEE Transactions in Affective Computing</div>
+                    <div class="award-year">2019</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-title">Outstanding reviewer award for Expert Systems With Applications Elsevier</div>
+                    <div class="award-year">2018</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-title">IEEE Early Career Writing Retreat Grant</div>
+                    <div class="award-year">2019</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-title">Tuition Fee Scholarship (TFS) plus a Research Stipend from UNSW</div>
+                    <div class="award-year">2014-2018</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-title">Top-up Scholarship from Data 61, CSIRO, Australia</div>
+                    <div class="award-year">2014-2018</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-title">ISCA (International Speech Communication Association) Grant, Interspeech, Stockholm</div>
+                    <div class="award-year">2017</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-title">Highly Commended Presentation (final 6 presentations) of Postgraduate Research Symposium, UNSW</div>
+                    <div class="award-year">2017</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-title">2nd rank in Audio, Video Emotion Challenge (AVEC) workshop, ACM Multimedia</div>
+                    <div class="award-year">2015</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-title">First-Class Prize, Underwater Signal Technology Competition, NWPU</div>
+                    <div class="award-year">2013</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-title">Excellent Bachelor Graduation Thesis Award of NWPU</div>
+                    <div class="award-year">2012</div>
+                </div>
+            </div>
+                <div class="mb-5"></div>  <!-- Added margin-bottom spacing -->
+            <h3 class="section-title">Grant and Contracts</h3>
+            <div class="awards-grid">
+                <div class="award-item">
+                    <div class="award-title">
+                        Benchmarking Auditory Cognitive Reasoning in Audio-Language Models
+                    </div>
+                    <div class="award-details">
+                        Lead CI, Google Research Fund &mdash; $85,000
+                    </div>
+                    <div class="award-year">2025-2026</div>
+                </div>
+                <!-- <div class="award-item">
+                    <div class="award-title">
+                        AI Centre for the Empowerment of Human Learning
+                    </div>
+                    <div class="award-details">
+                        Co-CI, Norway National Centre for AI and Learning &mdash; $300,000
+                    </div>
+                    <div class="award-year">2025-2027</div>
+                </div> -->
+                <!-- <div class="award-item">
+                    <div class="award-title">
+                        Multi-site Human Study on Non-invasive Alcohol Detection using Smart Wearable Technology
+                    </div>
+                    <div class="award-details">
+                        Co-CI, WHG Fund; $36,000
+                    </div>
+                    <div class="award-year">2025-2026</div>
+                </div> -->
+                <div class="award-item">
+                    <div class="award-title">
+                        Emotional Speech Generation for Intelligent Dialogue Systems
+                    </div>
+                    <div class="award-details">
+                        Lead CI, Wuhan University Collaborative Seed Grant &mdash; ¥50,000
+                    </div>
+                    <div class="award-year">2025-2025</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-title">
+                        Multimodal LLMs for Mobile Health
+                    </div>
+                    <div class="award-details">
+                        Lead CI, OpenAI Researcher Access Grant &mdash; $16,000
+                    </div>
+                    <div class="award-year">2024</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-title">
+                        Speech LLMs for Health
+                    </div>
+                    <div class="award-details">
+                        Lead CI, Google Cloud Research Credits &mdash; $5,000
+                    </div>
+                    <div class="award-year">2024</div>
+                </div>               
+            </div>
+            
+            <div class="mb-5"></div>
+            <h3 class="section-title">Press</h3>
+            <div class="sub-section">
+                <div class="talk-item">
+                    <div class="talk-title">
+                        <a href="https://www.paradisec.org.au/blog/2025/10/large-language-models-for-small-languages/" target="_blank">
+                            Large Language Models for Small Languages
+                        </a>
+                    </div>
+                    <div class="talk-venue">
+                        PARADISEC Blog <span class="talk-year">2025</span>
+                    </div>
+                </div>
+                <div class="talk-item">
+                    <div class="talk-title">
+                        <a href="https://www.cst.cam.ac.uk/news/remote-monitoring-successfully-tracks-covid-19-progression-over-time">Remote monitoring successfully tracks Covid-19 progression over time</a>
+                    </div>
+                    <div class="talk-venue">
+                        University of Cambridge <span class="talk-year">2022</span>
+                    </div>
+                </div>
+                <div class="talk-item">
+                    <div class="talk-title">
+                        <a href="https://mp.weixin.qq.com/s/xtjl0skrN_KlXDk8CqzAqw">COVID-19 detection via audio</a>
+                    </div>
+                    <div class="talk-venue">
+                        新智元 <span class="talk-year">2022</span>
+                    </div>
+                </div>
+                <div class="talk-item">
+                    <div class="talk-title">
+                        <a href="https://www.engbio.cam.ac.uk/files/media/digital_final_accelerating_research_impact_with_open_technologies.pdf">Accelerating Research Impact
+                        with Open Technologies</a>
+                    </div>
+                    <div class="talk-venue">
+                        EngBio IRC <span class="talk-year">2022</span>
+                    </div>
+                </div>
+                <div class="talk-item">
+                    <div class="talk-title">
+                        <a href="https://www.bbc.com/news/technology-52215290">Coronavirus: Covid-19 detecting apps face teething problems</a>
+                    </div>
+                    <div class="talk-venue">
+                        BBC <span class="talk-year">2020</span>
+                    </div>
+                </div>
+                <div class="talk-item">
+                    <div class="talk-title">
+                        <a href="https://www.theguardian.com/world/2020/sep/21/what-is-persistent-cough-and-how-to-i-recognise-it-coronavirus-covid">What is a 'persistent cough' and what should I do if I have it?</a>
+                    </div>
+                    <div class="talk-venue">
+                        The Guardian <span class="talk-year">2020</span>
+                    </div>
+                </div>
+
+            <div class="mb-5"></div> 
+            <h3 class="section-title">Invited Talks</h3>
+            <div class="sub-section">
+                <div class="talk-item">
+                    <div class="talk-title">The Future of Voice: Building Empathetic, Adaptive, and Efficient Generative AI for Speech</div>
+                    <div class="talk-venue">Commonwealth Bank AI Frontiers Series</div>
+                    <div class="talk-year">2025</div>
+                </div>
+                <div class="talk-item">
+                    <div class="talk-title">Human-centered AI for Mobile Health Sensing and Computing</div>
+                    <div class="talk-venue">
+                        <a href="https://ai.huhp.hokudai.ac.jp/en/news/1815/" target="_blank">Medical AI Symposium, Hokkaido University</a>
+                    </div>
+                    <div class="talk-year">2025</div>
+                </div>
+                <div class="talk-item">
+                    <div class="talk-title">Unlocking the Potential of Audio: From Acoustic Sensing to Adaptive Speech Intelligence</div>
+                    <div class="talk-venue">RIKEN-AIP-Melbourne workshop</div>
+                    <div class="talk-year">2025</div>
+                </div>
+                <div class="talk-item">
+                    <div class="talk-title">Advancing Mobile Health via Audio and Physiological Computing in the Era of Generative AI</div>
+                    <div class="talk-venue">School of Mathematics and Statistics, Xi'an Jiaotong University, China</div>
+                    <div class="talk-year">2025</div>
+                </div>
+                <div class="talk-item">
+                    <div class="talk-title">Advancing Mobile Health via Audio and Physiological Computing in the Era of Generative AI</div>
+                    <div class="talk-venue">School of Computer Science, Northwestern Polytechnical University, China</div>
+                    <div class="talk-year">2025</div>
+                </div>
+                <div class="talk-item">
+                    <div class="talk-title">Machine learning for mobile health</div>
+                    <div class="talk-venue">School of Biomedical Engineering, University of Sydney, Australia</div>
+                    <div class="talk-year">2024</div>
+                </div>
+                <div class="talk-item">
+                    <div class="talk-title">AI for mobile health</div>
+                    <div class="talk-venue">School of Computer Science and Engineering, University of New South Wales, Australia</div>
+                    <div class="talk-year">2024</div>
+                </div>
+                <div class="talk-item">
+                    <div class="talk-title">Machine learning for mobile health via audio</div>
+                    <div class="talk-venue">RMIT, Australia</div>
+                    <div class="talk-year">2023</div>
+                </div>
+                
+                <div class="talk-item">
+                    <div class="talk-title">Machine learning for mobile health via audio</div>
+                    <div class="talk-venue">South China Normal University, China</div>
+                    <div class="talk-year">2023</div>
+                </div>
+                <div class="talk-item">
+                    <div class="talk-title">COVID-19 Disease Progression Prediction and Forecasting via Audio: A Longitudinal Study</div>
+                    <div class="talk-venue">Women@CL at the University of Cambridge, UK</div>
+                    <div class="talk-year">2022</div>
+                </div>
+                <div class="talk-item">
+                    <div class="talk-title">Computational modeling of ambiguous emotion</div>
+                    <div class="talk-venue">AFAR Lab at the University of Cambridge</div>
+                    <div class="talk-year">2022</div>
+                </div>
+                <div class="talk-item">
+                    <div class="talk-title">Machine Learning in Mobile Health via Audio: bridging the gap between AI and healthcare</div>
+                    <div class="talk-venue">UCLIC at the University College London</div>
+                    <div class="talk-year">2022</div>
+                </div>
+                <div class="talk-item">
+                    <div class="talk-title">Speech-based Emotion Prediction</div>
+                    <div class="talk-venue">Tsinghua University</div>
+                    <div class="talk-year">2020</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="wide-container">
+            <p class="text-center mb-0">&copy; Ting Dang 2025</p>
+        </div>
+    </footer>
+
+    <!-- Update scripts to match index.html -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Close the navbar when a menu item is clicked
+            $('.navbar-nav>li>a').on('click', function(){
+                $('.navbar-collapse').collapse('hide');
+            });
+        });
+    </script>
+</body>
+</html>

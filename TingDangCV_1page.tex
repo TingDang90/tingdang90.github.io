@@ -1,0 +1,120 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[left=1.2cm, right=1.2cm, top=1.3cm, bottom=1.3cm]{geometry}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+\usepackage[svgnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+
+% Define colors
+\definecolor{primary}{HTML}{003366}
+\definecolor{secondary}{HTML}{336699}
+
+% --- Custom Commands ---
+
+% Header
+\newcommand{\contactitem}[2]{\faIcon{#1}\ \href{#2}}
+
+% Sections
+\titleformat{\section}
+  {\large\bfseries\color{primary}}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+\titlespacing*{\section}{0pt}{1.0em}{0.4em}
+
+\titleformat{\subsection}
+  {\bfseries\color{secondary}}
+  {}
+  {0em}
+  {}
+\titlespacing*{\subsection}{0pt}{0.0em}{0.0em}
+
+% CV event
+\newcommand{\cvevent}[4]{%
+    \noindent\textbf{#1}, #2, #4\hfill\textit{#3}\par
+}
+
+\newcommand{\cveducation}[4]{%
+    \noindent\textbf{#1}, #2, #4\hfill\textit{#3}\par
+}
+
+\begin{document}
+
+% --- Personal Info ---
+\begin{center}
+    {\Huge\bfseries\color{primary} Ting Dang} \\[.1em]
+    {\large\color{secondary} Senior Lecturer, University of Melbourne, Australia} \\
+    \vspace{0.2em}
+    {\bfseries Speech and Audio Processing \textbar{} Trustworthy Deep Learning \textbar{} Time Series Modelling}\\[0.4em]  
+    \small{\faEnvelope\ \href{mailto:ting.dang@unimelb.edu.au}{ting.dang@unimelb.edu.au} \quad
+    \faPhone\ +61 3 9035 4312 \quad
+    \faGlobe\ \href{https://tingdang90.github.io}{Website} \quad
+    \faLinkedin\ \href{https://www.linkedin.com/in/ting-dang-9928b6145/}{LinkedIn} \quad
+    \faGoogle\ \href{https://scholar.google.com.au/citations?user=Sb1Pj4sAAAAJ&hl=en}{Google Scholar}}
+\end{center}
+
+% --- Content ---
+
+\section*{Experience}
+\cvevent{Senior Lecturer}{University of Melbourne (UoM)}{Mar 2024 -- Present}{Australia}
+\cvevent{Senior Research Scientist}{Nokia Bell Labs}{Oct 2022 -- Dec 2023}{UK}
+\cvevent{Senior Research Associate}{University of Cambridge}{Jan 2021 -- Oct 2022}{UK}
+\cvevent{Research Associate}{University of New South Wales (UNSW)}{May 2018 -- Dec 2020}{Australia}
+
+\section*{Education}
+\cveducation{Ph.D.}{University of New South Wales (UNSW)}{Aug 2014 -- Jun 2018}{Australia}
+\cveducation{M.Eng.}{Northwestern Polytechnical University}{Sep 2012 -- Mar 2015}{China}
+\cveducation{B.Eng.}{Northwestern Polytechnical University}{Sep 2008 -- Mar 2012}{China}
+
+\setlist{itemsep=-0.3em}
+\section*{Selected Honors}
+\begin{itemize}[leftmargin=*, label=\textbullet]
+    \item Finalist, Rising Star (Academics), STEM Women in Color Award 2025.
+    \item Best Poster Award (PhD Forum) at AJCAI 2024.
+    \item Best Paper Award at ACII 2023.
+    \item Top 3\% of accepted papers at ICASSP 2023.
+    \item Shortlisted candidate for Asian Dean's Forum 2022 The Rising Stars - Women in Engineering Grant, 2022.
+    \item IEEE Early Career Writing Retreat Grant, 2019.
+    \item ISCA (International Speech Communication Association) Grant, Interspeech, Stockholm 2017.
+    % \item 2nd place in Audio/Video Emotion Challenge (AVEC) Workshop, ACM Multimedia, 2015.
+\end{itemize}
+
+\section*{Grants and Contracts}
+\begin{itemize}[leftmargin=*, label=\textbullet]
+    \item \textbf{Benchmarking Auditory Cognitive Reasoning in Audio-Language Models} \\
+    Lead CI, Google Research Fund, \$85,000 (2025-2026)
+    \item \textbf{AI Centre for the Empowerment of Human Learning} \\
+    Co-CI, Norway National Centre for AI and Learning, \$300,000 (2026-2028)
+    \item \textbf{Multi-site Human Study on Non-invasive Alcohol Detection using Smart Wearable Technology} \\
+    Co-CI, WHG Fund, \$36,000 (2025-2026)
+    \item \textbf{Emotional Speech Generation for Intelligent Dialogue Systems}\\
+    Lead CI, Wuhan University Collaborative Seed Grant, ¥50,000 (2025)
+    \item \textbf{Multimodal LLMs for Mobile Health}\\
+    Lead CI, OpenAI Researcher Access Grant \$16,000 (2024)
+    % \item \textbf{Speech LLMs for Health}\\
+    % Lead CI, Google Cloud Research Credits, \$5,000 (2024)
+\end{itemize}
+
+\section*{Professional Services}
+\begin{itemize}[leftmargin=*, label=\textbullet]
+    \item Associate Editor for IEEE Transactions on Affective Computing, IEEE Pervasive Computing, and Computer Speech and Language.
+    \item Area Chair (Senior PC) for ICASSP and AAAI.
+    \item Publicity co-chair for Mobisys 2026 and INTERSPEECH 2026.
+    \item Workshop, Tutorial, and Challenge co-organizer for 10+ leading international conferences.
+\end{itemize}
+
+\section*{Selected Publications}
+\begin{enumerate}[leftmargin=*, label={[\arabic*]}, itemsep=0em]
+    \item Dong, J., Jia, H., Chatterjee, S., Ghosh, A., Bailey, J., \underline{Dang, T}. E-BATS: Efficient Backpropagation-Free Test-Time Adaptation for Speech Foundation Models. \textbf{NeurIPS 2025}.
+    \item Gao, Y., Scamarcia, M., Fernandez-Marques, J., Naseri, M., Ng, C., Stripelis, D., Li, Z., Shen, T., Bai, J., Chen, D., Zhang, Z., Hu, R., Song, I., KangYoon, L., Jia, H., \underline{Dang, T}., Wang, J., Liu, Z., Beutel, D., Lyu, L., Lane, N. FlowerTune: A Cross-Domain Benchmark for Federated Fine-Tuning of Large Language Models. \textbf{NeurIPS 2025}.
+    \item Hong, X., Gong, Y., Sethu, V., \underline{Dang, T}. AER-LLM: Ambiguity-aware Emotion Recognition Leveraging Large Language Models. \textbf{ICASSP 2025}.
+    \item Jia, H., Kwon, Y., Orsino, A., \underline{Dang, T}., Talia, D., Mascolo, C. TinyTTA: Efficient Test-time Adaptation via Early-exit Ensembles on Edge Devices. \textbf{NeurIPS 2024}.
+    \item \underline{Dang, T}., Han, J., Xia, T., Bondareva, E., Brown, C., Chauhan, J., Grammenos, A., Spathis, D., Cicuta, P., Mascolo, C. (2023). Conditional Neural ODE Processes for Individual Disease Progression Forecasting: A Case Study on COVID-19. \textbf{ACM KDD 2023}.
+    \item Han, J., Xia, T., Spathis, D., Bondareva, E., Brown, C., Chauhan, J., \underline{Dang, T}., Grammenos, A., Hasthanasombat, A., Floto, A., Cicuta, P., Mascolo, C. (2021). Sounds of COVID-19: Exploring Realistic Performance of Audio-based Digital Testing. \textbf{NPJ Digital Medicine 2021}. 
+\end{enumerate}
+
+\end{document}
